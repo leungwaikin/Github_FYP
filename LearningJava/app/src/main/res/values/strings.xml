@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LearningJava</string>
+    <string name="title_activity_register">register</string>
+    <string name="register_title"><u><b><i>Copyright</i></b></u></string>
+    <string name="title_activity_aboutus">aboutus</string>
+    <string name="txtURL">Visit http://www.learnjava.com.hk</string>
+    <string name="txtPhone">Dial: 87654321</string>
+    <string name="title_activity_main_page">MainPage</string>
+</resources>
