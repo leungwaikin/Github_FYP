@@ -36,6 +36,14 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
         String login_url="http://10.0.2.2/login.php";
         String register_url="http://10.0.2.2/register.php";
         String chnagepassword_url="http://10.0.2.2/changepassword.php";//192.168.1.104 ,192.168.111.1 , 10.0.2.2,192.168.24.1
+        String testone_url="http://10.0.2.2/updatelatestone.php";
+		String testtwo_url="http://10.0.2.2/updatelatesttwo.php";
+		String testthree_url="http://10.0.2.2/updatelatestthree.php";
+		String testfour_url="http://10.0.2.2/updatelatestfour.php";
+		String testfive_url="http://10.0.2.2/updatelatestfive.php";
+		String testsix_url="http://10.0.2.2/updatelatestsix.php";
+        String displayrecord_url="http://10.0.2.2/displayrecord.php";
+
         if (type.equals("login")){
           try {
               URL url = new URL(login_url);
@@ -144,7 +152,271 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
             } catch(IOException e){
                 e.printStackTrace();
             }
+        }/*else if(type.equals("submittestone")){
+            try {
+                URL url = new URL(testone_url);
+                String username = params[1];
+                String testone = params[2];
+                System.out.print(username);
+                System.out.print(testone);
+                HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                httpURLConnection.setDoInput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
+                String post_data= URLEncoder. encode("username","UTF-8")+"="+URLEncoder. encode(username,"UTF-8")+"&"
+                        +URLEncoder. encode("testone","UTF-8")+"="+URLEncoder. encode(testone,"UTF-8");
+                bufferedWriter.write(post_data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+                InputStream inputStream= httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while ((line=bufferedReader.readLine())!= null){
+                    result+=line;
+                }
+
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return result;
+            } catch(MalformedURLException e){
+                e.printStackTrace();
+            } catch(IOException e){
+                e.printStackTrace();
+            }
+        }*//*else if(type.equals("submittesttwo")){
+            try {
+                URL url = new URL(testtwo_url);
+                String username = params[1];
+                String testtwo = params[2];
+                System.out.print(username);
+                System.out.print(testtwo);
+                HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                httpURLConnection.setDoInput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
+                String post_data= URLEncoder. encode("username","UTF-8")+"="+URLEncoder. encode(username,"UTF-8")+"&"
+                        +URLEncoder. encode("testtwo","UTF-8")+"="+URLEncoder. encode(testtwo,"UTF-8");
+                bufferedWriter.write(post_data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+                InputStream inputStream= httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while ((line=bufferedReader.readLine())!= null){
+                    result+=line;
+                }
+
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return result;
+            } catch(MalformedURLException e){
+                e.printStackTrace();
+            } catch(IOException e){
+                e.printStackTrace();
+            }
+        }*//*else if(type.equals("submittestthree")){
+            try {
+                URL url = new URL(testthree_url);
+                String username = params[1];
+                String testthree = params[2];
+                System.out.print(username);
+                System.out.print(testthree);
+                HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                httpURLConnection.setDoInput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
+                String post_data= URLEncoder. encode("username","UTF-8")+"="+URLEncoder. encode(username,"UTF-8")+"&"
+                        +URLEncoder. encode("testthree","UTF-8")+"="+URLEncoder. encode(testthree,"UTF-8");
+                bufferedWriter.write(post_data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+                InputStream inputStream= httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while ((line=bufferedReader.readLine())!= null){
+                    result+=line;
+                }
+
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return result;
+            } catch(MalformedURLException e){
+                e.printStackTrace();
+            } catch(IOException e){
+                e.printStackTrace();
+            }
+        }*//*else if(type.equals("submittestfour")){
+            try {
+                URL url = new URL(testfour_url);
+                String username = params[1];
+                String testfour = params[2];
+                System.out.print(username);
+                System.out.print(testfour);
+                HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                httpURLConnection.setDoInput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
+                String post_data= URLEncoder. encode("username","UTF-8")+"="+URLEncoder. encode(username,"UTF-8")+"&"
+                        +URLEncoder. encode("testfour","UTF-8")+"="+URLEncoder. encode(testfour,"UTF-8");
+                bufferedWriter.write(post_data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+                InputStream inputStream= httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while ((line=bufferedReader.readLine())!= null){
+                    result+=line;
+                }
+
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return result;
+            } catch(MalformedURLException e){
+                e.printStackTrace();
+            } catch(IOException e){
+                e.printStackTrace();
+            }
+        }*//*else if(type.equals("submittestfive")){
+            try {
+                URL url = new URL(testfive_url);
+                String username = params[1];
+                String testfive = params[2];
+                System.out.print(username);
+                System.out.print(testfive);
+                HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                httpURLConnection.setDoInput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
+                String post_data= URLEncoder. encode("username","UTF-8")+"="+URLEncoder. encode(username,"UTF-8")+"&"
+                        +URLEncoder. encode("testfive","UTF-8")+"="+URLEncoder. encode(testfive,"UTF-8");
+                bufferedWriter.write(post_data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+                InputStream inputStream= httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while ((line=bufferedReader.readLine())!= null){
+                    result+=line;
+                }
+
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return result;
+            } catch(MalformedURLException e){
+                e.printStackTrace();
+            } catch(IOException e){
+                e.printStackTrace();
+            }
+        }*//*else if(type.equals("submittestsix")){
+            try {
+                URL url = new URL(testsix_url);
+                String username = params[1];
+                String testsix = params[2];
+                System.out.print(username);
+                System.out.print(testsix);
+                HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                httpURLConnection.setDoInput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
+                String post_data= URLEncoder. encode("username","UTF-8")+"="+URLEncoder. encode(username,"UTF-8")+"&"
+                        +URLEncoder. encode("testsix","UTF-8")+"="+URLEncoder. encode(testsix,"UTF-8");
+                bufferedWriter.write(post_data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+                InputStream inputStream= httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while ((line=bufferedReader.readLine())!= null){
+                    result+=line;
+                }
+
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return result;
+            } catch(MalformedURLException e){
+                e.printStackTrace();
+            } catch(IOException e){
+                e.printStackTrace();
+            }
+        }*/else if(type.equals("display")){
+            try {
+                URL url = new URL(displayrecord_url);
+                String username = params[1];
+                System.out.print(username);
+                HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                httpURLConnection.setDoInput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
+                String post_data= URLEncoder. encode("username","UTF-8")+"="+URLEncoder. encode(username,"UTF-8");
+                bufferedWriter.write(post_data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+                InputStream inputStream= httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String result="";
+                String line="";
+                while ((line=bufferedReader.readLine())!= null){
+                    result+=line;
+                }
+                result=result.replace("connection success","");
+                result=result.replace("{","");
+                result=result.replace("[","");
+                result=result.replace("]","");
+                result=result.replace("}","");
+                result=result.replace("\"","");
+                System.out.println(result);
+                String[] parts = result.split(",");
+                System.out.println(parts[0]);
+                System.out.println("substring1 is = " + parts[0].substring(8));
+                System.out.println("substring2 is = " + parts[1].substring(8));
+                System.out.println("substring3 is = " + parts[2].substring(10));
+                System.out.println("substring4 is = " + parts[3].substring(9));
+                System.out.println("substring5 is = " + parts[4].substring(9));
+                System.out.println("substring6 is = " + parts[5].substring(8));
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return result;
+            } catch(MalformedURLException e){
+                e.printStackTrace();
+            } catch(IOException e){
+                e.printStackTrace();
+            }
         }
+
         return null;
     }
     @Override
@@ -165,6 +437,9 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
         }else if (result.contains("Update not")){
 
         }else if (result.contains("Update")){
+
+        }else if (result.contains("test")){
+
 
         }else{
             Intent in = new Intent (context,MainPage.class);
