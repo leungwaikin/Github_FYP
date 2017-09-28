@@ -7,17 +7,23 @@ import android.view.View;
 import android.widget.Button;
 
 public class Chapter1 extends AppCompatActivity {
-  Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9;
+    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9;
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter1);
+        Bundle bundle=getIntent().getExtras();
+        name=bundle.getString("username");
         btn1=(Button)findViewById((R.id.button1));
         btn1.setOnClickListener(new View.OnClickListener(){
             @Override
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(Chapter1.this,Chapter1a.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
                 startActivity(jumpage);
             }
         });
@@ -27,6 +33,9 @@ public class Chapter1 extends AppCompatActivity {
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(Chapter1.this,Chapter1b.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
                 startActivity(jumpage);
             }
         });
@@ -36,6 +45,9 @@ public class Chapter1 extends AppCompatActivity {
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(Chapter1.this,Chapter1c.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
                 startActivity(jumpage);
             }
         });
@@ -45,6 +57,9 @@ public class Chapter1 extends AppCompatActivity {
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(Chapter1.this,Chapter1d.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
                 startActivity(jumpage);
             }
         });
@@ -54,6 +69,9 @@ public class Chapter1 extends AppCompatActivity {
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(Chapter1.this,Chapter1e.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
                 startActivity(jumpage);
             }
         });
@@ -63,6 +81,9 @@ public class Chapter1 extends AppCompatActivity {
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(Chapter1.this,Chapter1f.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
                 startActivity(jumpage);
             }
         });
@@ -72,6 +93,9 @@ public class Chapter1 extends AppCompatActivity {
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(Chapter1.this,Chapter1g.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
                 startActivity(jumpage);
             }
         });
@@ -81,6 +105,9 @@ public class Chapter1 extends AppCompatActivity {
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(Chapter1.this,Chapter1h.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
                 startActivity(jumpage);
             }
         });
@@ -90,6 +117,9 @@ public class Chapter1 extends AppCompatActivity {
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(Chapter1.this,Chapter1quiz.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
                 startActivity(jumpage);
             }
         });

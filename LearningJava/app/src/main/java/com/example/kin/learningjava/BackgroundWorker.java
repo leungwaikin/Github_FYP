@@ -152,7 +152,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
             } catch(IOException e){
                 e.printStackTrace();
             }
-        }/*else if(type.equals("submittestone")){
+        }else if(type.equals("submittestone")){
             try {
                 URL url = new URL(testone_url);
                 String username = params[1];
@@ -188,7 +188,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
             } catch(IOException e){
                 e.printStackTrace();
             }
-        }*//*else if(type.equals("submittesttwo")){
+        }else if(type.equals("submittesttwo")){
             try {
                 URL url = new URL(testtwo_url);
                 String username = params[1];
@@ -224,7 +224,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
             } catch(IOException e){
                 e.printStackTrace();
             }
-        }*//*else if(type.equals("submittestthree")){
+        }else if(type.equals("submittestthree")){
             try {
                 URL url = new URL(testthree_url);
                 String username = params[1];
@@ -260,7 +260,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
             } catch(IOException e){
                 e.printStackTrace();
             }
-        }*//*else if(type.equals("submittestfour")){
+        }else if(type.equals("submittestfour")){
             try {
                 URL url = new URL(testfour_url);
                 String username = params[1];
@@ -296,7 +296,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
             } catch(IOException e){
                 e.printStackTrace();
             }
-        }*//*else if(type.equals("submittestfive")){
+        }else if(type.equals("submittestfive")){
             try {
                 URL url = new URL(testfive_url);
                 String username = params[1];
@@ -332,7 +332,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
             } catch(IOException e){
                 e.printStackTrace();
             }
-        }*//*else if(type.equals("submittestsix")){
+        }else if(type.equals("submittestsix")){
             try {
                 URL url = new URL(testsix_url);
                 String username = params[1];
@@ -368,7 +368,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
             } catch(IOException e){
                 e.printStackTrace();
             }
-        }*/else if(type.equals("display")){
+        }else if(type.equals("display")){
             try {
                 URL url = new URL(displayrecord_url);
                 String username = params[1];

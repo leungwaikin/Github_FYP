@@ -11,10 +11,13 @@ import android.widget.Button;
 public class Chapter1h extends AppCompatActivity {
     WebView mwebview;
     Button jumppage1,jumppage2;
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter1h);
+        Bundle bundle=getIntent().getExtras();
+        name=bundle.getString("username");
         mwebview = (WebView) findViewById(R.id.webview);
         WebSettings webSettings = mwebview.getSettings();
         webSettings.setJavaScriptEnabled(true);

@@ -11,10 +11,13 @@ import android.widget.Button;
 public class Chapter5a extends AppCompatActivity {
     WebView mwebview;
     Button jumppage1,jumppage2;
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter5a);
+        Bundle bundle=getIntent().getExtras();
+        name=bundle.getString("username");
         mwebview = (WebView) findViewById(R.id.webview);
         WebSettings webSettings = mwebview.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -34,6 +37,9 @@ public class Chapter5a extends AppCompatActivity {
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(Chapter5a.this,Chapter5b.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
                 startActivity(jumpage);
             }
         });
