@@ -44,13 +44,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="4. Overriding and Overloading" />
+            android:text="4. Method Overriding" />
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="5 Abstract Classes" />
+            android:text="5 Abstraction" />
         <Button
             android:id="@+id/button6"
             android:layout_width="match_parent"
@@ -62,13 +62,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="7. Casting" />
+            android:text="7. Type Casting(variable)" />
         <Button
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="8. Downcasting" />
+            android:text="8. Type Casting(class)" />
         <Button
             android:id="@+id/button9"
             android:layout_width="match_parent"
@@ -86,7 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="11. The equals() method" />
+            android:text="11. Comparing Objects" />
         <Button
             android:id="@+id/button12"
             android:layout_width="match_parent"
@@ -98,7 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="13. Using the Java API" />
+            android:text="13. Java API" />
         <Button
             android:id="@+id/button14"
             android:layout_width="match_parent"
