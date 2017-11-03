@@ -153,30 +153,6 @@ public class Chapter6 extends AppCompatActivity {
             @Override
             //On click function
             public void onClick(View w) {
-                Intent jumpage=new Intent(Chapter6.this,Chapter6l.class);
-                Bundle bundle = new Bundle();
-                bundle.putString("username",name);
-                jumpage.putExtras(bundle);
-                startActivity(jumpage);
-            }
-        });
-        btn13=(Button)findViewById((R.id.button13));
-        btn13.setOnClickListener(new View.OnClickListener(){
-            @Override
-            //On click function
-            public void onClick(View w) {
-                Intent jumpage=new Intent(Chapter6.this,Chapter6m.class);
-                Bundle bundle = new Bundle();
-                bundle.putString("username",name);
-                jumpage.putExtras(bundle);
-                startActivity(jumpage);
-            }
-        });
-        btn14=(Button)findViewById((R.id.button14));
-        btn14.setOnClickListener(new View.OnClickListener(){
-            @Override
-            //On click function
-            public void onClick(View w) {
                 Intent jumpage=new Intent(Chapter6.this,Chapter6quiz.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("username",name);

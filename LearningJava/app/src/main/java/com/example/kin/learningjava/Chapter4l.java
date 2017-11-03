@@ -36,7 +36,7 @@ public class Chapter4l extends AppCompatActivity {
             @Override
             //On click function
             public void onClick(View w) {
-                Intent jumpage=new Intent(Chapter4l.this,Chapter4m.class);
+                Intent jumpage=new Intent(Chapter4l.this,Chapter4quiz.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("username",name);
                 jumpage.putExtras(bundle);

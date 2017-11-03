@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Chapter4 extends AppCompatActivity {
-    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14;
+    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13;
     String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -164,18 +164,6 @@ public class Chapter4 extends AppCompatActivity {
             @Override
             //On click function
             public void onClick(View w) {
-                Intent jumpage=new Intent(Chapter4.this,Chapter4m.class);
-                Bundle bundle = new Bundle();
-                bundle.putString("username",name);
-                jumpage.putExtras(bundle);
-                startActivity(jumpage);
-            }
-        });
-        btn14=(Button)findViewById((R.id.button14));
-        btn14.setOnClickListener(new View.OnClickListener(){
-            @Override
-            //On click function
-            public void onClick(View w) {
                 Intent jumpage=new Intent(Chapter4.this,Chapter4quiz.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("username",name);
@@ -183,6 +171,7 @@ public class Chapter4 extends AppCompatActivity {
                 startActivity(jumpage);
             }
         });
+
 
     }
 }

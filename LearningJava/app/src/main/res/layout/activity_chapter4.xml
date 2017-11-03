@@ -20,13 +20,13 @@
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Chapter 1  Basic Concepts" />
+            android:text="Chapter 4  Classes and Objects" />
         <Button
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="1. 24 Object-Oriented Programming" />
+            android:text="1.  Object-Oriented Programming" />
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
@@ -38,73 +38,67 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="3. Method Return Types" />
+            android:text="3. Return Types" />
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="4. Creating Classes  and  Objects" />
+            android:text="4. Creating Classes " />
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="5.Class Attributes" />
+            android:text="5.Access Modifiers" />
         <Button
             android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="6. Access Modifierss" />
+            android:text="6. Getters and Setters Method" />
         <Button
             android:id="@+id/button7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="7.Getters and Setters" />
+            android:text="7.Constructors" />
         <Button
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="8.Constuctors" />
+            android:text="8.Value and Reference Types" />
         <Button
             android:id="@+id/button9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="9.Value and Reference Types" />
+            android:text="9.The Math Class" />
         <Button
             android:id="@+id/button10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="10.The Math Class" />
+            android:text="10. Static" />
         <Button
             android:id="@+id/button11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="11. Static" />
+            android:text="11.Final" />
         <Button
             android:id="@+id/button12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="12. Final" />
+            android:text="12. Packages" />
         <Button
             android:id="@+id/button13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="13. Packages" />
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="14. Chapter4 Quiz" />
+            android:text="13. Chapter4 Quiz" />
     </LinearLayout>
 
 

@@ -21,25 +21,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="1. Conditional Statements" />
+            android:text="1. Arrays" />
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="2. Array" />
+            android:text="2. Array Length" />
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="3. Summing  Elements in Arrays" />
+            android:text="3. Enhanced for Loop" />
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="4. Enhanced for loop" />
+            android:text="4. Multidimensional Arrays" />
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
