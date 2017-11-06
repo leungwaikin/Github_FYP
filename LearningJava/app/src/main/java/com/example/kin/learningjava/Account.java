@@ -94,7 +94,7 @@ public class Account extends AppCompatActivity {
         @Override
         protected String doInBackground(String... params) {
             String type = params[0];
-            String displayrecord_url="http://10.0.2.2/displayrecord.php";
+            String displayrecord_url="https://leungwaikin.000webhostapp.com/displayrecord.php";
 
             if(type.equals("display")){
                 try {

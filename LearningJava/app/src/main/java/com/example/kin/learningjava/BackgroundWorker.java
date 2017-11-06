@@ -33,16 +33,16 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
-        String login_url="http://10.0.2.2/login.php";
-        String register_url="http://10.0.2.2/register.php";
-        String chnagepassword_url="http://10.0.2.2/changepassword.php";//192.168.1.104 ,192.168.111.1 , 10.0.2.2,192.168.24.1
-        String testone_url="http://10.0.2.2/updatelatestone.php";
-		String testtwo_url="http://10.0.2.2/updatelatesttwo.php";
-		String testthree_url="http://10.0.2.2/updatelatestthree.php";
-		String testfour_url="http://10.0.2.2/updatelatestfour.php";
-		String testfive_url="http://10.0.2.2/updatelatestfive.php";
-		String testsix_url="http://10.0.2.2/updatelatestsix.php";
-        String displayrecord_url="http://10.0.2.2/displayrecord.php";
+        String login_url="https://leungwaikin.000webhostapp.com/login.php";
+        String register_url="https://leungwaikin.000webhostapp.com/register.php";
+        String chnagepassword_url="https://leungwaikin.000webhostapp.com/changepassword.php";//192.168.1.104 ,192.168.111.1 , 10.0.2.2,192.168.24.1
+        String testone_url="https://leungwaikin.000webhostapp.com/updatelatestone.php";
+		String testtwo_url="https://leungwaikin.000webhostapp.com/updatelatesttwo.php";
+		String testthree_url="https://leungwaikin.000webhostapp.com/updatelatestthree.php";
+		String testfour_url="https://leungwaikin.000webhostapp.com/updatelatestfour.php";
+		String testfive_url="https://leungwaikin.000webhostapp.com/updatelatestfive.php";
+		String testsix_url="https://leungwaikin.000webhostapp.com/updatelatestsix.php";
+        String displayrecord_url="https://leungwaikin.000webhostapp.com/displayrecord.php";
 
         if (type.equals("login")){
           try {

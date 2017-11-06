@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 public class Chapter2quiz extends AppCompatActivity {
     String name;
-    int scoretesttwo;
+    int scoretesttwo=8;
     String testtwo;
     String type = "submittesttwo";
     @Override

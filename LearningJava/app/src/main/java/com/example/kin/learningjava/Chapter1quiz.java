@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 public class Chapter1quiz extends AppCompatActivity {
     String name;
-    int scoretestone;
+    int scoretestone = 20;
     String testone;
     String type = "submittestone";
 
