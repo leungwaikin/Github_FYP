@@ -34,14 +34,14 @@
                 android:layout_height="125dp"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_vertical|center_horizontal"
-                app:srcCompat="@drawable/c" />
+                app:srcCompat="@drawable/tutorial" />
             <ImageButton
                 android:id="@+id/imageButton2"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_vertical|center_horizontal"
-                app:srcCompat="@drawable/c" />
+                app:srcCompat="@drawable/testyyourself" />
 
         </TableRow>
 
@@ -56,14 +56,14 @@
                 android:layout_height="125dp"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_vertical|center_horizontal"
-                app:srcCompat="@drawable/c" />
+                app:srcCompat="@drawable/aboutus" />
             <ImageButton
                 android:id="@+id/imageButton4"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_vertical|center_horizontal"
-                app:srcCompat="@drawable/c" />
+                app:srcCompat="@drawable/profile" />
         </TableRow>
 
 
