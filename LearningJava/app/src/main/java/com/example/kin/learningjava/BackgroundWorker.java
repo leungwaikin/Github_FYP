@@ -25,7 +25,7 @@ import java.net.URLEncoder;
 
 public class BackgroundWorker extends AsyncTask<String,Void,String> {
     Context context;
-    AlertDialog alertDialog;
+    //AlertDialog alertDialog;
     String passingname="";
     BackgroundWorker (Context ctx) {
         context=ctx;
@@ -422,22 +422,24 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
     @Override
     protected void onPreExecute() {
 
-        alertDialog= new AlertDialog.Builder(context).create();
-        alertDialog.setTitle("Status");
+        //alertDialog= new AlertDialog.Builder(context).create();
+        //alertDialog.setTitle("Status");
 
     }
     @Override
     protected void onPostExecute(String result) {
-        alertDialog.setMessage(result);
-        alertDialog.show();
+        //alertDialog.setMessage(result);
+        //alertDialog.show();
         if (result.contains("Login not")){
+            Toast.makeText(context,"Information not match. Try again", Toast.LENGTH_SHORT).show();
             context.startActivity(new Intent(context,MainActivity.class));
         }else if (result.contains("Insert not")) {
+            Toast.makeText(context,"Username has beem used. Try another", Toast.LENGTH_SHORT).show();
             context.startActivity(new Intent(context, register.class));
         }else if (result.contains("Update not")){
-
+            Toast.makeText(context,"Fail to change password. Try again later", Toast.LENGTH_SHORT).show();
         }else if (result.contains("Update")){
-
+            Toast.makeText(context,"Password has been changed", Toast.LENGTH_SHORT).show();
         }else if (result.contains("test")){
 
 
