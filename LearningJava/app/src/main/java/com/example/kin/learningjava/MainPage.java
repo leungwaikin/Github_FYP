@@ -32,6 +32,9 @@ public class MainPage extends AppCompatActivity {
 
                 Toast.makeText(MainPage.this,"You log out successfully", Toast.LENGTH_SHORT).show();
                 Intent jumpage=new Intent(MainPage.this,MainActivity.class);
+                jumpage.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //Closing all activities
+                jumpage.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                jumpage.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);  //Add new Flag to strat new activity
                 startActivity(jumpage);
             }
         });

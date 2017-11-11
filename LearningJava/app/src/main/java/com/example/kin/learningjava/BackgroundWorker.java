@@ -445,6 +445,9 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 
         }else{
             Intent in = new Intent (context,MainPage.class);
+            in.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //Closing all activities
+            in.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            in.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //Add new Flag to strat new activity
             Bundle bundle = new Bundle();
             bundle.putString("username",passingname);
             in.putExtras(bundle);
