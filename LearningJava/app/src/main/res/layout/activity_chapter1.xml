@@ -74,7 +74,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="9. Chapter1 Quiz" />
+            android:text="9. Method introduction" />
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="10. Chapter1 Quiz" />
     </LinearLayout>
 
 

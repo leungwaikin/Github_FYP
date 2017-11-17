@@ -8,26 +8,26 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
 
-public class Chapter1h extends AppCompatActivity {
+public class Chapter1i extends AppCompatActivity {
     WebView mwebview;
     Button jumppage1,jumppage2;
     String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chapter1h);
+        setContentView(R.layout.activity_chapter1i);
         Bundle bundle=getIntent().getExtras();
         name=bundle.getString("username");
         mwebview = (WebView) findViewById(R.id.webview);
         WebSettings webSettings = mwebview.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mwebview.loadUrl("https://leungwaikin.000webhostapp.com/Chapter1h.html");
+        mwebview.loadUrl("https://leungwaikin.000webhostapp.com/Chapter1i.html");
         jumppage1=(Button)findViewById(R.id.jump1);
         jumppage1.setOnClickListener(new View.OnClickListener(){
             @Override
             //On click function
             public void onClick(View w) {
-                Intent jumpage=new Intent(Chapter1h.this,Exercise.class);
+                Intent jumpage=new Intent(Chapter1i.this,Exercise.class);
                 startActivity(jumpage);
             }
         });
@@ -36,7 +36,7 @@ public class Chapter1h extends AppCompatActivity {
             @Override
             //On click function
             public void onClick(View w) {
-                Intent jumpage=new Intent(Chapter1h.this,Chapter1i.class);
+                Intent jumpage=new Intent(Chapter1i.this,Chapter1quiz.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("username",name);
                 jumpage.putExtras(bundle);
@@ -45,3 +45,4 @@ public class Chapter1h extends AppCompatActivity {
         });
     }
 }
+
