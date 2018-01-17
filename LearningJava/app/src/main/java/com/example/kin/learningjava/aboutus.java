@@ -12,12 +12,14 @@ import android.widget.TextView;
 public class aboutus extends AppCompatActivity {
     TextView text1,text2,text3,text4,text5,text6,text7,text8,text9,text10;
     ImageView icon1,icon2,icon3;
-
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aboutus);
+        Bundle bundle=getIntent().getExtras();
+        name=bundle.getString("username");
         icon1=(ImageView)findViewById(R.id.imageView1);
         icon2=(ImageView)findViewById(R.id.imageView2);
         icon3=(ImageView)findViewById(R.id.imageView3);

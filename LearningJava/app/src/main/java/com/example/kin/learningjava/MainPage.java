@@ -56,6 +56,9 @@ public class MainPage extends AppCompatActivity {
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(MainPage.this,Exercise.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
                 startActivity(jumpage);
             }
         });
@@ -65,6 +68,9 @@ public class MainPage extends AppCompatActivity {
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(MainPage.this,aboutus.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
                 startActivity(jumpage);
             }
         });

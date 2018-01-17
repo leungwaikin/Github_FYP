@@ -28,6 +28,9 @@ public class Chapter5i extends AppCompatActivity {
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(Chapter5i.this,Exercise.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
                 startActivity(jumpage);
             }
         });
