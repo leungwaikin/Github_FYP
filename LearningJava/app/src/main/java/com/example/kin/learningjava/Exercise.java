@@ -17,6 +17,10 @@ public class Exercise extends AppCompatActivity {
         mwebview = (WebView) findViewById(R.id.webview);
         WebSettings webSettings = mwebview.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        mwebview.getSettings().setBuiltInZoomControls(true);
+        mwebview.setInitialScale(1);
         mwebview.loadUrl("https://www.compilejava.net");
+        mwebview.getSettings().setUseWideViewPort(true);
+        mwebview.getSettings().setLoadWithOverviewMode(true);
     }
 }
