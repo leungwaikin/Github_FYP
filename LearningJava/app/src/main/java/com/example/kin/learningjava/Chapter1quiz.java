@@ -90,11 +90,11 @@ public class Chapter1quiz extends AppCompatActivity {
             mQuestionNumber++;
         }
         else {
-            Toast.makeText(Chapter1quiz.this, "It was the last question!", Toast.LENGTH_SHORT).show();
+          
             testone=Integer.toString(mScore);
             BackgroundWorker background = new BackgroundWorker(Chapter1quiz.this);
             background.execute(type,name,testone);
-            Toast.makeText(Chapter1quiz.this, "Submission finish", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Chapter1quiz.this, "Quiz1 completed", Toast.LENGTH_SHORT).show();
             Intent jumpage = new Intent(Chapter1quiz.this, Quiz1result.class);
             Bundle bundle = new Bundle();
             bundle.putString("score",testone);// pass the current score to the second screen
