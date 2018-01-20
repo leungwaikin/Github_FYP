@@ -68,20 +68,20 @@ public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyb
                 }
 
                 if (code == 'q' && keyString=="1") {
-                    ic.commitText(String.valueOf("package"), 1);
-                }
-                if (code == 'w' && keyString=="1") {
-                    ic.commitText(String.valueOf("main"), 1);
-                }
-                if (code == 'e' && keyString=="1") {
                     ic.commitText(String.valueOf("{}"), 1);
                 }
-                if (code == 'r' && keyString=="1") {
+                if (code == 'w' && keyString=="1") {
                     ic.commitText(String.valueOf("()"), 1);
+                }
+                if (code == 'e' && keyString=="1") {
+                    ic.commitText(String.valueOf("&&"), 1);
+                }
+                if (code == 'r' && keyString=="1") {
+                    ic.commitText(String.valueOf("||"), 1);
                 }
 
                 if (code == 'p' && keyString=="1") {
-                    ic.commitText(String.valueOf("import"), 1);
+                    ic.commitText(String.valueOf("final"), 1);
                 }
                 if (code == 'a' && keyString=="1") {
                     ic.commitText(String.valueOf("String"), 1);

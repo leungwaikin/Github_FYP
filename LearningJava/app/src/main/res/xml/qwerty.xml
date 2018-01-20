@@ -15,11 +15,11 @@
         <Key android:codes="48" android:keyLabel="static" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
-        <Key android:codes="113" android:keyLabel="package" android:keyEdgeFlags="left"/>
-        <Key android:codes="119" android:keyLabel="main"/>
-        <Key android:codes="101" android:keyLabel="{}"/>
-        <Key android:codes="114" android:keyLabel="()"/>
-        <Key android:codes="112" android:keyLabel="import" android:keyEdgeFlags="right"/>
+        <Key android:codes="113" android:keyLabel="{}" android:keyEdgeFlags="left"/>
+        <Key android:codes="119" android:keyLabel="()"/>
+        <Key android:codes="101" android:keyLabel="&amp;&amp;"/>
+        <Key android:codes="114" android:keyLabel="||"/>
+        <Key android:codes="112" android:keyLabel="final" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
         <Key android:codes="97" android:keyLabel="String" android:keyEdgeFlags="left"/>
