@@ -17,24 +17,27 @@ public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyb
 
     private KeyboardView kv;
     private Keyboard keyboard;
-
+    private Keyboard keyboard2;
     private boolean caps = false;
-
+    private String keyString;
+    private String keyString2;
 
     public View onCreateInputView(){
          kv = (KeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
          keyboard = new Keyboard(this, R.xml.qwerty);
+         keyboard2 = new Keyboard(this, R.xml.qwerty2);
         kv.setKeyboard(keyboard);
         kv.setOnKeyboardActionListener(this);
+        keyString="1";
         return kv;
     }
     @Override
     public void onKey(int primaryCode, int[] keyCodes) {
         InputConnection ic = getCurrentInputConnection();
 
-        switch(primaryCode){
+        switch(primaryCode) {
 
-            case Keyboard.KEYCODE_DELETE :
+            case Keyboard.KEYCODE_DELETE:
                 ic.deleteSurroundingText(1, 0);
                 break;
             case Keyboard.KEYCODE_SHIFT:
@@ -46,53 +49,84 @@ public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyb
                 ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
                 break;
             default:
-                char code = (char)primaryCode;
+                char code = (char) primaryCode;
 
-                if(code=='1'){
-                    ic.commitText(String.valueOf("public"),1);
+                if (code == '1' && keyString=="1") {
+                    ic.commitText(String.valueOf("public"), 1);
                 }
-                if(code=='2'){
-                    ic.commitText(String.valueOf("private"),1);
+                if (code == '2' && keyString=="1") {
+                    ic.commitText(String.valueOf("private"), 1);
                 }
-                if(code=='3'){
-                    ic.commitText(String.valueOf("void"),1);
+                if (code == '3' && keyString=="1") {
+                    ic.commitText(String.valueOf("void"), 1);
                 }
-                if(code=='4'){
-                    ic.commitText(String.valueOf("class"),1);
+                if (code == '4' && keyString=="1") {
+                    ic.commitText(String.valueOf("class"), 1);
                 }
-                if(code=='0'){
-                    ic.commitText(String.valueOf("static"),1);
+                if (code == '0' && keyString=="1") {
+                    ic.commitText(String.valueOf("static"), 1);
                 }
 
-                 if(code=='q') {
-                    ic.commitText(String.valueOf("package"),1);
+                if (code == 'q' && keyString=="1") {
+                    ic.commitText(String.valueOf("package"), 1);
+                }
+                if (code == 'w' && keyString=="1") {
+                    ic.commitText(String.valueOf("main"), 1);
+                }
+                if (code == 'e' && keyString=="1") {
+                    ic.commitText(String.valueOf("{}"), 1);
+                }
+                if (code == 'r' && keyString=="1") {
+                    ic.commitText(String.valueOf("()"), 1);
+                }
+
+                if (code == 'p' && keyString=="1") {
+                    ic.commitText(String.valueOf("import"), 1);
+                }
+                if (code == 'a' && keyString=="1") {
+                    ic.commitText(String.valueOf("String"), 1);
+                }
+                if (code == 's' && keyString=="1") {
+                    ic.commitText(String.valueOf("boolean"), 1);
+                }
+                if (code == 'd' && keyString=="1") {
+                    ic.commitText(String.valueOf("int"), 1);
+                }
+                if (code == 'f' && keyString=="1") {
+                    ic.commitText(String.valueOf("float"), 1);
+                }
+                if (code == 'g'&& keyString=="1") {
+                    ic.commitText(String.valueOf("double"), 1);
+                }
+                if (code == '.' && keyString=="1") {
+                    keyString2="1";
+                    kv.setKeyboard(keyboard2);
+                    keyString="2";
+                    break;
+                }
+                if (code == ',' && keyString=="1") {
+                    ic.commitText(String.valueOf(";"), 1);
+                }
+                if (code == ' ' && keyString=="1") {
+                    ic.commitText(String.valueOf(" "), 1);
+                }
+                if (Character.isLetter(code) && caps) {
+                    code = Character.toUpperCase(code);
+                }
+                if (code == '/' && keyString=="2") {
+                    keyString2="2";
+                    keyString="1";
+                    kv.setKeyboard(keyboard);
+                }
+                if (code=='#'&&keyString=="2"&& keyString2=="1") {
+                ic.commitText(String.valueOf("/* */"), 1);
+                break;
             }
-                if(code=='w') {
-                ic.commitText(String.valueOf("main"),1);
-              }
-                if(code=='e') {
-                ic.commitText(String.valueOf("{}"),1);
-                }
-                if(code=='r') {
-                 ic.commitText(String.valueOf("()"),1);}
 
-                 if(code=='p') {
-                  ic.commitText(String.valueOf("import"),1);}
-                if(code=='a') {
-                    ic.commitText(String.valueOf("java"),1);}
-                if(code=='s') {
-                    ic.commitText(String.valueOf("boolean"),1);}
-                if(code=='d') {
-                    ic.commitText(String.valueOf("int"),1);}
-                if(code=='f') {
-                    ic.commitText(String.valueOf("float"),1);}
-                if(code=='g') {
-            ic.commitText(String.valueOf("double"),1);}
-                if(code==',') {
-                    ic.commitText(String.valueOf(";"),1);}
-                if(code=='/') {
-                    ic.commitText(String.valueOf("/"),1);}
-    }
+                if (keyString=="2"&& keyString2=="1") {
+                    ic.commitText(String.valueOf(code), 1);
+                }
+        }
 
 }   @Override
     public void onPress(int primaryCode) {
