@@ -101,16 +101,22 @@
         <activity android:name=".Chapter6quiz" />
         <activity android:name=".Chapter4quiz" />
         <activity android:name=".Exercise" />
-        <activity android:name=".Chapter1i"></activity>
-        <service android:name=".SimpleIME"
+        <activity android:name=".Chapter1i" />
+
+        <service
+            android:name=".SimpleIME"
             android:label="@string/simple_ime"
-            android:permission="android.permission.BIND_INPUT_METHOD"
-            >
-            <meta-data android:name="android.view.im" android:resource="@xml/method"/>
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+
             <intent-filter>
                 <action android:name="android.view.InputMethod" />
             </intent-filter>
         </service>
+
+        <activity android:name=".Quiz1result"></activity>
     </application>
 
 </manifest>
