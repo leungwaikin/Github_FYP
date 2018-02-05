@@ -6,11 +6,11 @@ import android.content.Context;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Quiz1QuestionBank {
+public class Quiz3QuestionBank {
 
     // declare list of Question objects
     List <Question1> list = new ArrayList<>();
-    MyDataBaseHelper1 myDataBaseHelper;
+    MyDataBaseHelper3 myDataBaseHelper;
 
     // method returns number of questions in list
     public int getLength(){
@@ -37,7 +37,7 @@ public class Quiz1QuestionBank {
 
 
     public void initQuestions(Context context) {
-        myDataBaseHelper = new MyDataBaseHelper1(context);
+        myDataBaseHelper = new MyDataBaseHelper3(context);
         list = myDataBaseHelper.getAllQuestionsList();//get questions/choices/answers from database
 
         if (list.isEmpty()) {//if list is empty, populate database with default questions/choices/answers

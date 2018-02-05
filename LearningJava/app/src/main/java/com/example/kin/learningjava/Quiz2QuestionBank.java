@@ -6,11 +6,11 @@ import android.content.Context;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Quiz1QuestionBank {
+public class Quiz2QuestionBank {
 
     // declare list of Question objects
     List <Question1> list = new ArrayList<>();
-    MyDataBaseHelper1 myDataBaseHelper;
+    MyDataBaseHelper2 myDataBaseHelper;
 
     // method returns number of questions in list
     public int getLength(){
@@ -37,7 +37,7 @@ public class Quiz1QuestionBank {
 
 
     public void initQuestions(Context context) {
-        myDataBaseHelper = new MyDataBaseHelper1(context);
+        myDataBaseHelper = new MyDataBaseHelper2(context);
         list = myDataBaseHelper.getAllQuestionsList();//get questions/choices/answers from database
 
         if (list.isEmpty()) {//if list is empty, populate database with default questions/choices/answers
@@ -49,8 +49,8 @@ public class Quiz1QuestionBank {
                     new String[]{"Toggle Button", "Spinner", "Switch Button", "ImageButton"}, "Spinner"));
             myDataBaseHelper.addInitialQuestion(new Question1("4. What is a widget in Android app?",
                     new String[]{"reusable GUI element", "Layout for Activity", "device placed in cans of beer", "build toolkit"}, "reusable GUI element"));
-            /*myDataBaseHelper.addInitialQuestion(new Question("5. Q5?",
-                    new String[]{"A", "B", "Cr", "D"}, "A"));*/
+            myDataBaseHelper.addInitialQuestion(new Question1("5. Q5?",
+                    new String[]{"A", "B", "Cr", "D"}, "A"));
 
             list = myDataBaseHelper.getAllQuestionsList();//get list from database again
 
