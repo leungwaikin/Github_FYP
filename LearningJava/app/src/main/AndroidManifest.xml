@@ -11,6 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <service android:name=".JavaIME"
+            android:label="@string/java_ime"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            >
+            <meta-data android:name="android.view.im" android:resource="@xml/method"/>
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+        </service>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -102,19 +111,6 @@
         <activity android:name=".Chapter4quiz" />
         <activity android:name=".Exercise" />
         <activity android:name=".Chapter1i" />
-
-        <service
-            android:name=".SimpleIME"
-            android:label="@string/simple_ime"
-            android:permission="android.permission.BIND_INPUT_METHOD">
-            <meta-data
-                android:name="android.view.im"
-                android:resource="@xml/method" />
-
-            <intent-filter>
-                <action android:name="android.view.InputMethod" />
-            </intent-filter>
-        </service>
 
         <activity android:name=".Quiz1result"></activity>
     </application>

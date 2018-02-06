@@ -6,7 +6,7 @@
     <string name="txtURL">Visit http://www.learnjava.com.hk</string>
     <string name="txtPhone">Dial: 87654321</string>
     <string name="title_activity_main_page">MainPage</string>
-    <string name="keyboard_name">SimpleKeyboard</string>
-    <string name="simple_ime">Simple IME</string>
+    <string name="keyboard_name">JavaKeyboard</string>
+    <string name="java_ime">Java IME</string>
     <string name="subtype_en_US">English (US)</string>
 </resources>

@@ -13,22 +13,26 @@ import static android.view.KeyEvent.KEYCODE_1;
  * Created by Lenovo on 19/1/2018.
  */
 
-public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
+public class JavaIME extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
 
     private KeyboardView kv;
     private Keyboard keyboard;
     private Keyboard keyboard2;
+    private Keyboard keyboard3;
     private boolean caps = false;
     private String keyString;
     private String keyString2;
+    private boolean keyCap;
 
     public View onCreateInputView(){
-         kv = (KeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
-         keyboard = new Keyboard(this, R.xml.qwerty);
-         keyboard2 = new Keyboard(this, R.xml.qwerty2);
+        kv = (KeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
+        keyboard = new Keyboard(this, R.xml.qwerty);
+        keyboard2 = new Keyboard(this, R.xml.qwerty2);
+        keyboard3 =new Keyboard(this, R.xml.qwerty3);
         kv.setKeyboard(keyboard);
         kv.setOnKeyboardActionListener(this);
         keyString="1";
+        keyCap=false;
         return kv;
     }
     @Override
@@ -44,6 +48,10 @@ public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyb
                 caps = !caps;
                 keyboard.setShifted(caps);
                 kv.invalidateAllKeys();
+                if(caps)
+                    kv.setKeyboard(keyboard3);
+                else
+                    kv.setKeyboard(keyboard2);
                 break;
             case Keyboard.KEYCODE_DONE:
                 ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
@@ -112,6 +120,7 @@ public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyb
                 }
                 if (Character.isLetter(code) && caps) {
                     code = Character.toUpperCase(code);
+
                 }
                 if (code == '/' && keyString=="2") {
                     keyString2="2";
@@ -119,16 +128,16 @@ public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyb
                     kv.setKeyboard(keyboard);
                 }
                 if (code=='#'&&keyString=="2"&& keyString2=="1") {
-                ic.commitText(String.valueOf("/* */"), 1);
-                break;
-            }
+                    ic.commitText(String.valueOf("/* */"), 1);
+                    break;
+                }
 
                 if (keyString=="2"&& keyString2=="1") {
                     ic.commitText(String.valueOf(code), 1);
                 }
         }
 
-}   @Override
+    }   @Override
     public void onPress(int primaryCode) {
     }
 
