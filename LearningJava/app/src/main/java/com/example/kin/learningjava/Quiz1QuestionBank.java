@@ -43,14 +43,14 @@ public class Quiz1QuestionBank {
         if (list.isEmpty()) {//if list is empty, populate database with default questions/choices/answers
             myDataBaseHelper.addInitialQuestion(new Question1("1. To distribute your application to different platforms, how many Java versions do you need to create?",
                     new String[]{"Just one version", "One for each platform", "Two versions", "No version"}, "Just one version"));
-            myDataBaseHelper.addInitialQuestion(new Question1("2. What is the name of build toolkit for Android Studio?",
-                    new String[]{"JVM", "Gradle", "Dalvik", "HAXM"}, "Gradle"));
-            myDataBaseHelper.addInitialQuestion(new Question1("3. What widget can replace any use of radio buttons?",
-                    new String[]{"Toggle Button", "Spinner", "Switch Button", "ImageButton"}, "Spinner"));
-            myDataBaseHelper.addInitialQuestion(new Question1("4. What is a widget in Android app?",
-                    new String[]{"reusable GUI element", "Layout for Activity", "device placed in cans of beer", "build toolkit"}, "reusable GUI element"));
-            /*myDataBaseHelper.addInitialQuestion(new Question("5. Q5?",
-                    new String[]{"A", "B", "Cr", "D"}, "A"));*/
+            myDataBaseHelper.addInitialQuestion(new Question1("2. In every Java program...",
+                    new String[]{"...there must be a method called \"main\".", "...all of the variables must be integers.", "...there must be at least two variables declared.", "there must be a method output String variable."}, "...there must be a method called "main"."));
+            myDataBaseHelper.addInitialQuestion(new Question1("3. Which variable type would you use for a city name?",
+                    new String[]{"double", "int", "boolean", "String"}, "String"));
+            myDataBaseHelper.addInitialQuestion(new Question("4. You can add a Java doc style comment by using:",
+                    new String[]{"// and */ characters to wrap a comment.", "/** and */ characters to wrap a comment.", "/* and */ characters to wrap a comment.", "// characters in the beginning of the line."}, "/** and */ characters to wrap a comment."));
+            myDataBaseHelper.addInitialQuestion(new Question("5. What is the result of the following code?\\nint x = 15; int y = 4;\\nint result = x / y;\\nSystem.out.println(result);",
+                    new String[]{"3", "3.75", "60", "11"}, "3"));
 
             list = myDataBaseHelper.getAllQuestionsList();//get list from database again
 

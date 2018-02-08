@@ -41,16 +41,16 @@ public class Quiz2QuestionBank {
         list = myDataBaseHelper.getAllQuestionsList();//get questions/choices/answers from database
 
         if (list.isEmpty()) {//if list is empty, populate database with default questions/choices/answers
-            myDataBaseHelper.addInitialQuestion(new Question1("1. To distribute your application to different platforms, how many Java versions do you need to create?",
-                    new String[]{"Just one version", "One for each platform", "Two versions", "No version"}, "Just one version"));
-            myDataBaseHelper.addInitialQuestion(new Question1("2. What is the name of build toolkit for Android Studio?",
-                    new String[]{"JVM", "Gradle", "Dalvik", "HAXM"}, "Gradle"));
-            myDataBaseHelper.addInitialQuestion(new Question1("3. What widget can replace any use of radio buttons?",
-                    new String[]{"Toggle Button", "Spinner", "Switch Button", "ImageButton"}, "Spinner"));
-            myDataBaseHelper.addInitialQuestion(new Question1("4. What is a widget in Android app?",
-                    new String[]{"reusable GUI element", "Layout for Activity", "device placed in cans of beer", "build toolkit"}, "reusable GUI element"));
-            myDataBaseHelper.addInitialQuestion(new Question1("5. Q5?",
-                    new String[]{"A", "B", "Cr", "D"}, "A"));
+            myDataBaseHelper.addInitialQuestion(new Question1("1. An if statement can contain how many else if statements?",
+                    new String[]{"None", "Only two", "Only one", "As many as you want"}, "As many as you want"));
+            myDataBaseHelper.addInitialQuestion(new Question1("2. What is the output of the following code?\\nint a = 11; int b = 12; int c = 40;\\nswitch (a) {\\n case 40:\\n   System.out.println(b);\\n   break;\\n default:\\n   System.out.println(c);\\n}\\n",
+                    new String[]{"11", "12", "40", "52"}, "40"));
+            myDataBaseHelper.addInitialQuestion(new Question1("3. How is a do while loop different from a while loop?",
+                    new String[]{"There are no different.", "A do while loop runs your code at least one time.", "A while loop runs the code before testing the condition.", "A do while loop tests the condition before running the code."}, "A do while loop runs your code at least one time."));
+            myDataBaseHelper.addInitialQuestion(new Question1("4. Choose a statement to fill in the blanks to print \"in a loop\" 5 times using the for loop.",
+                    new String[]{"reusable GUI element", "Layout for Activity", "device placed in cans of beer", "build toolkit"}, "reusable GUI element. \\n __(int x = 0; x < 5; x++) { \\n  System.out.println(\"in a loop\");}"));
+            myDataBaseHelper.addInitialQuestion(new Question1("5. How many times will the following loop run?\\nfor (int i = 2; i < 10; i = i*i) {\\n  System.out.println(i);\\n}",
+                    new String[]{"2", "10", "2", "4"}, "2"));
 
             list = myDataBaseHelper.getAllQuestionsList();//get list from database again
 
