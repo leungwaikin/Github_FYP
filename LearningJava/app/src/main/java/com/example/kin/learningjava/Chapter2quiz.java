@@ -54,8 +54,8 @@ public class Chapter2quiz extends AppCompatActivity {
     private int mQuestionNumber = 0; // current question number
 
     String name;
-    String testone;
-    String type = "submittestone";
+    String testtwo;
+    String type = "submittesttwo";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,13 +91,13 @@ public class Chapter2quiz extends AppCompatActivity {
         }
         else {
 
-            testone=Integer.toString(mScore);
+            testtwo=Integer.toString(mScore);
             BackgroundWorker background = new BackgroundWorker(Chapter2quiz.this);
-            background.execute(type,name,testone);
+            background.execute(type,name,testtwo);
             Toast.makeText(Chapter2quiz.this, "Quiz2 completed", Toast.LENGTH_SHORT).show();
             Intent jumpage = new Intent(Chapter2quiz.this, Quiz2result.class);
             Bundle bundle = new Bundle();
-            bundle.putString("score",testone);// pass the current score to the second screen
+            bundle.putString("score",testtwo);// pass the current score to the second screen
             bundle.putString("username",name);
             jumpage.putExtras(bundle);
             startActivity(jumpage);
