@@ -22,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Question to answer:"
+            android:textSize="12sp"
             android:padding="4dp"
             android:layout_marginBottom="10dp"
             android:id="@+id/question"
@@ -30,15 +31,15 @@
 
 
         <Button
+            android:id="@+id/choice1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="A"
-            android:background="@android:color/holo_blue_dark"
-            android:textColor="#000000"
-            android:padding="8dp"
-            android:onClick="onClick"
             android:layout_marginBottom="24dp"
-            android:id="@+id/choice1"/>
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="onClick"
+            android:padding="8dp"
+            android:text="A"
+            android:textColor="#000000" />
 
         <Button
             android:layout_width="match_parent"
