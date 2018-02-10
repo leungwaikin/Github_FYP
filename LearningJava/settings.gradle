@@ -1,1 +1,3 @@
-include ':app'
+include ':app', ':splitview', ':colorpicker', ':pager', ':treeview', ':dx', ':manifest_merger',
+        ':javacodeformatter', ':javacompiler', ':gitforandroid', ':androidlogcat',
+        ':fileexplorer', ':common', ':styles', ':app3'
