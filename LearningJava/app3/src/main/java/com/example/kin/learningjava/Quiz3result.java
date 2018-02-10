@@ -14,7 +14,7 @@ public class Quiz3result extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz3result);
+        setContentView(R.layout.activity_quiz1result);
         Bundle bundle=getIntent().getExtras();
         testscore=bundle.getString("score");
         name=bundle.getString("username");
