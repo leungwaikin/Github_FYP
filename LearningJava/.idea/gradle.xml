@@ -8,21 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/androidlogcat" />
-            <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app3" />
-            <option value="$PROJECT_DIR$/colorpicker" />
-            <option value="$PROJECT_DIR$/common" />
-            <option value="$PROJECT_DIR$/dx" />
-            <option value="$PROJECT_DIR$/fileexplorer" />
-            <option value="$PROJECT_DIR$/gitforandroid" />
-            <option value="$PROJECT_DIR$/javacodeformatter" />
-            <option value="$PROJECT_DIR$/javacompiler" />
-            <option value="$PROJECT_DIR$/manifest_merger" />
-            <option value="$PROJECT_DIR$/pager" />
-            <option value="$PROJECT_DIR$/splitview" />
-            <option value="$PROJECT_DIR$/styles" />
-            <option value="$PROJECT_DIR$/treeview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

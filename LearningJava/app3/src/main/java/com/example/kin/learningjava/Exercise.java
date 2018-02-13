@@ -20,8 +20,11 @@ public class Exercise extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         mwebview.getSettings().setBuiltInZoomControls(true);
         mwebview.setInitialScale(1);
-        mwebview.loadUrl("https://www.compilejava.net");
-        mwebview.getSettings().setUseWideViewPort(true);
+        mwebview.loadUrl("https://codebunk.com/b/302196985/");
+       /* mwebview.loadUrl("javascript:(function() { " +
+                "var head = document.getElementsByClassName('header').style.display='none'; " +
+                "})()");*/
+      mwebview.getSettings().setUseWideViewPort(true);
         mwebview.getSettings().setLoadWithOverviewMode(true);
         /*Intent in;
         in = new Intent(Exercise.this,DialogNewClass.class);
