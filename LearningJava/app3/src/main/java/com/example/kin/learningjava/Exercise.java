@@ -18,9 +18,9 @@ public class Exercise extends AppCompatActivity {
         mwebview = (WebView) findViewById(R.id.webview);
         WebSettings webSettings = mwebview.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mwebview.getSettings().setBuiltInZoomControls(true);
+        //mwebview.getSettings().setBuiltInZoomControls(true);
         mwebview.setInitialScale(1);
-        mwebview.loadUrl("https://codebunk.com/b/302196985/");
+        mwebview.loadUrl("https://repl.it/repls/SnivelingSubmissiveRepo");
        /* mwebview.loadUrl("javascript:(function() { " +
                 "var head = document.getElementsByClassName('header').style.display='none'; " +
                 "})()");*/
