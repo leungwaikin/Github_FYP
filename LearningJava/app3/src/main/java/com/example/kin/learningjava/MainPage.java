@@ -14,8 +14,9 @@ import android.widget.Toast;
 
 public class MainPage extends AppCompatActivity {
     Button logout;
+    TextView textView1;
     ImageButton imgbutton1,imgbutton2,imgbutton3,imgbutton4;
-    String name;
+    String name, temp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,9 @@ public class MainPage extends AppCompatActivity {
         setContentView(R.layout.activity_main_page);
         Bundle bundle=getIntent().getExtras();
         name=bundle.getString("username");
-
+        textView1=(TextView)findViewById(R.id.textView1);
+        temp = "Welcome, "+ name;
+        textView1.setText(temp);
         logout=(Button)findViewById(R.id.button1);
         logout.setOnClickListener(new View.OnClickListener(){
             @Override

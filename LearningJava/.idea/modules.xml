@@ -3,31 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LearningJava.iml" filepath="$PROJECT_DIR$/LearningJava.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\androidlogcat\LearningJava-androidlogcat.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\androidlogcat\LearningJava-androidlogcat.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\colorpicker\LearningJava-colorpicker.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\colorpicker\LearningJava-colorpicker.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\common\LearningJava-common.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\common\LearningJava-common.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\dx\LearningJava-dx.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\dx\LearningJava-dx.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\fileexplorer\LearningJava-fileexplorer.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\fileexplorer\LearningJava-fileexplorer.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\gitforandroid\LearningJava-gitforandroid.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\gitforandroid\LearningJava-gitforandroid.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\javacodeformatter\LearningJava-javacodeformatter.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\javacodeformatter\LearningJava-javacodeformatter.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\javacompiler\LearningJava-javacompiler.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\javacompiler\LearningJava-javacompiler.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\manifest_merger\LearningJava-manifest_merger.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\manifest_merger\LearningJava-manifest_merger.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\splitview\LearningJava-splitview.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\splitview\LearningJava-splitview.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\styles\LearningJava-styles.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\styles\LearningJava-styles.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\treeview\LearningJava-treeview.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\treeview\LearningJava-treeview.iml" />
       <module fileurl="file://$PROJECT_DIR$/app3/app3.iml" filepath="$PROJECT_DIR$/app3/app3.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\colorpicker\colorpicker.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\colorpicker\colorpicker.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\common\common.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\common\common.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\dx\dx.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\dx\dx.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\fileexplorer\fileexplorer.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\fileexplorer\fileexplorer.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\gitforandroid\gitforandroid.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\gitforandroid\gitforandroid.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\javacodeformatter\javacodeformatter.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\javacodeformatter\javacodeformatter.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\javacompiler\javacompiler.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\javacompiler\javacompiler.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\manifest_merger\manifest_merger.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\manifest_merger\manifest_merger.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\pager\pager.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\pager\pager.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\splitview\splitview.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\splitview\splitview.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\styles\styles.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\styles\styles.iml" />
-      <module fileurl="file://C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\treeview\treeview.iml" filepath="C:\Users\Lenovo\Documents\GitHub\Github_FYP\LearningJava\treeview\treeview.iml" />
     </modules>
   </component>
 </project>

@@ -1,71 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#abcdef"
-    tools:context="com.example.kin.learningjava.MainActivity"
-    android:weightSum="1">
+    android:layout_height="match_parent">
 
-
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="Logout" />
+        android:background="#abcdef"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context="com.example.kin.learningjava.MainActivity">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Learning Java"
+            android:textColor="@color/translucent_red"
+            android:textSize="40dp"
+            android:textStyle="bold" />
 
-    <TableLayout
-        android:id="@+id/table1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:stretchColumns="*"
-        android:padding="3dip"
-        >
+        <RelativeLayout
+            android:layout_width="394dp"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
 
-        <TableRow>
+            <!-- horizontal buttons here -->
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerVertical="true"
+                android:text="Welcome back "
+
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView1"
+                android:layout_marginEnd="23dp"
+                android:text="Logout" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+
+            android:orientation="horizontal">
+
             <ImageButton
                 android:id="@+id/imageButton1"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="33dp"
+                android:paddingStart="20dp"
                 app:srcCompat="@drawable/tutorial" />
+
             <ImageButton
                 android:id="@+id/imageButton2"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
-                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
                 android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginEnd="33dp"
                 app:srcCompat="@drawable/testyyourself" />
-
-        </TableRow>
-
+        </RelativeLayout>
 
 
-
-        <TableRow>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60dp"
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/imageButton3"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="33dp"
+                android:paddingStart="20dp"
                 app:srcCompat="@drawable/aboutus" />
+
             <ImageButton
                 android:id="@+id/imageButton4"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
-                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
                 android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginEnd="33dp"
                 app:srcCompat="@drawable/profile" />
-        </TableRow>
+        </RelativeLayout>
 
 
-    </TableLayout>
     </LinearLayout>
+
+</ScrollView>
