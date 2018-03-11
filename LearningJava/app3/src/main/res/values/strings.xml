@@ -9,4 +9,13 @@
     <string name="keyboard_name">JavaKeyboard</string>
     <string name="java_ime">Java IME</string>
     <string name="subtype_en_US">English (US)</string>
+
+    <string name="ex1">
+public class Main{\n\n
+        public static void main(String[] args){\n\n
+        System.out.print(\"Java is amazing\");\n\n  }\n}</string>
+    <string-array name="exercises">
+        <item>public class Main{\n\n public static void main(String[] args){\n\n System.out.print(\"Java is amazing\");\n\n  }\n}</item>
+    </string-array>
+
 </resources>
