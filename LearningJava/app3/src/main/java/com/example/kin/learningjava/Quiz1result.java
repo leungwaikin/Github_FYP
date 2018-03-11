@@ -26,7 +26,7 @@ public class Quiz1result extends AppCompatActivity {
             @Override
             //On click function
             public void onClick(View w) {
-                Intent jumpage=new Intent(Quiz1result.this,Chapter1.class);
+                Intent jumpage=new Intent(Quiz1result.this,Chapterlist.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("username",name);
                 jumpage.putExtras(bundle);

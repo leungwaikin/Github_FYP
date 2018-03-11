@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingBottom="10dip"
-            android:text=" Quiz 1 Final Score"
+            android:text=" This Quiz Final Score"
             android:textColor="@color/translucent_red"
             android:textSize="30sp" />
 

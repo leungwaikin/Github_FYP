@@ -95,7 +95,7 @@ public class Chapter2quiz extends AppCompatActivity {
             BackgroundWorker background = new BackgroundWorker(Chapter2quiz.this);
             background.execute(type,name,testtwo);
             Toast.makeText(Chapter2quiz.this, "Quiz2 completed", Toast.LENGTH_SHORT).show();
-            Intent jumpage = new Intent(Chapter2quiz.this, Quiz2result.class);
+            Intent jumpage = new Intent(Chapter2quiz.this, Quiz1result.class);
             Bundle bundle = new Bundle();
             bundle.putString("score",testtwo);// pass the current score to the second screen
             bundle.putString("username",name);
