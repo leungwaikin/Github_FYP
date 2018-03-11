@@ -29,7 +29,7 @@ public class Exercise extends AppCompatActivity {
     WebView mwebview;
     String name;
     final Context context = this;
-    Resources res = getResources();
+   // Resources res = getResources();
   //  String[]  exercises = res.getStringArray(R.array.exercises);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
