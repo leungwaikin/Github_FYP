@@ -104,8 +104,16 @@ public class Exercise extends AppCompatActivity {
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 TextView title = new TextView(context);
-                title.setTextSize(15);
+                if(spinner.getSelectedItem().toString().length()>50&&spinner.getSelectedItem().toString().length()<=100) {
+                    title.setTextSize(15);
+                }else if(spinner.getSelectedItem().toString().length()<=50){
+                    title.setTextSize(20);
+                }else if(spinner.getSelectedItem().toString().length()>100){
+                    title.setTextSize(15);
+                }
                 title.setText(spinner.getSelectedItem().toString()+".");
+                title.setPadding(5,5,0,0);
+                title.setTextColor(-16777216);
 // 2. Chain together various setter methods to set the dialog characteristics
                 builder.setView(R.layout.exercisequestion);
                 //builder.setTitle(spinner.getSelectedItem().toString());
