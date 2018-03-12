@@ -15,7 +15,84 @@ public class Main{\n\n
         public static void main(String[] args){\n\n
         System.out.print(\"Java is amazing\");\n\n  }\n}</string>
     <string-array name="exercises">
-        <item>public class Main{\n\n public static void main(String[] args){\n\n System.out.print(\"Java is amazing\");\n\n  }\n}</item>
+        <item></item>
+        <item> public class Main{\n\n public static void main(String[] args){\n\n System.out.print(\"Java is amazing\");\n\n  }\n}</item>
+        <item>public class Main {\n\n
+
+            public static void main(String[] args) {\n\n
+            /*We can use the println method to prints a line of text to the screen.
+            The System class and its out stream are used to access to println method.*/
+
+            \n System.out.println(\"This is Q1-3 answer\");
+            \n \n }\n\n
+            }</item>
+
+       <item>public class Main {\n\n
+
+           public static void main(String[] args) {\n\n
+           double x = 20.5;\n
+           String str = \"String\";
+           \n\n    System.out.println(x);
+           \n     System.out.println(str);
+           \n  }\n\n
+           }</item>
+
+    <item>
+        public class Main {\n\n
+        public static void main(String[] args) {\n\n    int x = 7;
+        \n   int y = 8 ;
+        \n\n   System.out.println(x+y);\n\n
+        }\n\n
+        } </item>
+    <item>
+        public class Main {\n\n
+
+        public static void main(String[] args) {\n\n
+        int x = 10;\n
+        int y = 10;\n
+
+        //x++ is called postfix. Returns the value of x and then increments
+        \n  System.out.println(x++);
+        \n // ++y is called prefix. Increments the value of x and then returns x
+        \n System.out.println(++y);\n\n
+        }\n\n
+        }
+    </item>
+    <item>
+       public class Main {\n\n
+        public static void main(String[] args) {\n\n
+        String str= \"string\";\n\n
+        System.out.println(\"Using \"+str+\" concatenation is convenient\");\n\n
+        }\n\n
+        }
+    </item>
+    <item>
+        import java.util.Scanner;\n\n
+       public class Main {\n\n
+        public static void main(String[] args) {\n\n
+        Scanner input =new Scanner(System.in);\n\n
+        System.out.println(input.next());\n\n
+        }\n\n
+        }
+    </item>
+    <item>
+       public class Main {\n\n
+        public static int maxFunction(int n1,int n2){\n\n
+        int max;\n\n
+        if(n1>n2)\n
+        max=n1;\n
+        else\n
+        max=n2;\n
+        return max;\n
+        }\n
+        public static void main(String[] args) {\n
+        int a = 11;\n
+        int b = 12 ;\n
+        int c = maxFunction(a,b);\n\n
+        System.out.println(\"Maximum Value = \"+c);\n\n
+        }\n\n
+        }
+    </item>
     </string-array>
 
 </resources>

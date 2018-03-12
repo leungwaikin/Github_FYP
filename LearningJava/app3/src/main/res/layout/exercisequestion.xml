@@ -19,7 +19,7 @@
             android:layout_marginBottom="47dp"
             android:text="Displpay"
             android:layout_margin="25dp"
-            android:textSize="25dp" />
+            android:textSize="15dp" />
     </ScrollView>
     <Button
         android:id="@+id/dialogButtonCopy"

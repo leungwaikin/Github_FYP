@@ -29,6 +29,8 @@ public class Exercise extends AppCompatActivity {
     WebView mwebview;
     String name;
     final Context context = this;
+
+    //String[] albums = getResources().getStringArray(R.array.exercises);
    // Resources res = getResources();
   //  String[]  exercises = res.getStringArray(R.array.exercises);
     @Override
@@ -36,7 +38,7 @@ public class Exercise extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise);
         Spinner spinner = (Spinner) findViewById(R.id.simpleSpinner);
-
+        String[] exercises = context.getResources().getStringArray(R.array.exercises);
         // Spinner click listener
        // spinner.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
 
@@ -44,11 +46,11 @@ public class Exercise extends AppCompatActivity {
         List<String> categories = new ArrayList<String>();
         categories.add("Q1-1: Run and execute the default program");
         categories.add("Q1-2: Write a program printing out \"Java is amazing\" ");
-        categories.add("Q1-3: Use multi-line comments to explain the function of System.out.println");
-        categories.add("Q1-4: Write two variables to store \"String \" &  20.5");
+        categories.add("Q1-3: Use multi-line comments to describe the function of System.out.println");
+        categories.add("Q1-4: Write two variables to store and print \"String \" &  20.5");
         categories.add("Q1-5: Write a program printing out the sum of 7+8 ( x + y )");
-        categories.add("Q1-6: Write a program and initialize the variable x to 10 , printing out x++ and +xx. Explain the difference ");
-        categories.add("Q1-7: Write a program and print out the string using String Concantenation ");
+        categories.add("Q1-6: Write a program and initialize the variables x & y to 10 , printing out x++ and ++y. Explain the difference ");
+        categories.add("Q1-7: Write a program and print out a string using String Concantenation ");
         categories.add("Q1-8: Write a program to get input \"Java\" ");
         categories.add("Q1-9: Write a program with a method to return the maximum of two numbers ");
         // Creating adapter for spinner
@@ -101,10 +103,13 @@ public class Exercise extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
-
+                TextView title = new TextView(context);
+                title.setTextSize(15);
+                title.setText(spinner.getSelectedItem().toString()+".");
 // 2. Chain together various setter methods to set the dialog characteristics
                 builder.setView(R.layout.exercisequestion);
-                builder.setTitle(spinner.getSelectedItem().toString());
+                //builder.setTitle(spinner.getSelectedItem().toString());
+                builder.setCustomTitle(title);
 
 
 
@@ -113,14 +118,25 @@ public class Exercise extends AppCompatActivity {
                 final AlertDialog dialog = builder.create();
                 dialog.show();
                final TextView text = (TextView) dialog.findViewById(R.id.textView15);
-               text.setText(R.string.ex1);
-                  /*  for(int i=0;i<=exercises.length;i++){
-              if(spinner.getSelectedItemPosition()==i) {
-                  text.setText(exercises[i]);
-              }
-              }*/
+                String[] exercises = context.getResources().getStringArray(R.array.exercises);
                 Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
                 Button dialogButton2 = (Button) dialog.findViewById(R.id.dialogButtonCopy);
+
+                    for(int i=0;i<=exercises.length;i++){
+              if(spinner.getSelectedItemPosition()==i) {
+                  if(!exercises[i].equals("")) {
+                      text.setText(exercises[i]);
+                      dialogButton2.setEnabled(true);
+                  }
+                  else {
+                      text.setText("(No answer)");
+                      dialogButton2.setEnabled(false);
+                  }
+
+
+              }
+              }
+
                 // if button is clicked, close the custom dialog
                dialogButton.setOnClickListener(new View.OnClickListener() {
                     @Override
