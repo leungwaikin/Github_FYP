@@ -49,7 +49,7 @@ public class Quiz1QuestionBank {
                     new String[]{"double", "int", "boolean", "String"}, "String"));
             myDataBaseHelper.addInitialQuestion(new Question1("4. You can add a Java doc style comment by using:",
                     new String[]{"// and */ characters to wrap a comment.", "/** and */ characters to wrap a comment.", "/* and */ characters to wrap a comment.", "// characters in the beginning of the line."}, "/** and */ characters to wrap a comment."));
-            myDataBaseHelper.addInitialQuestion(new Question1("5. What is the result of the following code?\\nint x = 15; int y = 4;\\nint result = x / y;\\nSystem.out.println(result);",
+            myDataBaseHelper.addInitialQuestion(new Question1("5. What is the result of the following code?\nint x = 15; int y = 4;\nint result = x / y;\nSystem.out.println(result);",
                     new String[]{"3", "3.75", "60", "11"}, "3"));
 
             list = myDataBaseHelper.getAllQuestionsList();//get list from database again

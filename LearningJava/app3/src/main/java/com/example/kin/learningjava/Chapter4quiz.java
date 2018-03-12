@@ -40,7 +40,7 @@ package com.example.kin.learningjava;
 
 public class Chapter4quiz extends AppCompatActivity {
 
-    private Quiz2QuestionBank mQuestionLibrary = new Quiz2QuestionBank();
+    private Quiz4QuestionBank mQuestionLibrary = new Quiz4QuestionBank();
 
     private TextView mScoreView;   // view for current total score
     private TextView mQuestionView;  //current question to answer
@@ -54,8 +54,8 @@ public class Chapter4quiz extends AppCompatActivity {
     private int mQuestionNumber = 0; // current question number
 
     String name;
-    String testone;
-    String type = "submittestone";
+    String testfour;
+    String type = "submittestfour";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,13 +91,13 @@ public class Chapter4quiz extends AppCompatActivity {
         }
         else {
 
-            testone=Integer.toString(mScore);
+            testfour=Integer.toString(mScore);
             BackgroundWorker background = new BackgroundWorker(Chapter4quiz.this);
-            background.execute(type,name,testone);
-            Toast.makeText(Chapter4quiz.this, "Quiz2 completed", Toast.LENGTH_SHORT).show();
-            Intent jumpage = new Intent(Chapter4quiz.this, Quiz2result.class);
+            background.execute(type,name,testfour);
+            Toast.makeText(Chapter4quiz.this, "Quiz4 completed", Toast.LENGTH_SHORT).show();
+            Intent jumpage = new Intent(Chapter4quiz.this, Quiz1result.class);
             Bundle bundle = new Bundle();
-            bundle.putString("score",testone);// pass the current score to the second screen
+            bundle.putString("score",testfour);// pass the current score to the second screen
             bundle.putString("username",name);
             jumpage.putExtras(bundle);
             startActivity(jumpage);

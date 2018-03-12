@@ -41,16 +41,16 @@ public class Quiz4QuestionBank {
         list = myDataBaseHelper.getAllQuestionsList();//get questions/choices/answers from database
 
         if (list.isEmpty()) {//if list is empty, populate database with default questions/choices/answers
-            myDataBaseHelper.addInitialQuestion(new Question1("1. To distribute your application to different platforms, how many Java versions do you need to create?",
-                    new String[]{"Just one version", "One for each platform", "Two versions", "No version"}, "Just one version"));
-            myDataBaseHelper.addInitialQuestion(new Question1("2. What is the name of build toolkit for Android Studio?",
-                    new String[]{"JVM", "Gradle", "Dalvik", "HAXM"}, "Gradle"));
-            myDataBaseHelper.addInitialQuestion(new Question1("3. What widget can replace any use of radio buttons?",
-                    new String[]{"Toggle Button", "Spinner", "Switch Button", "ImageButton"}, "Spinner"));
-            myDataBaseHelper.addInitialQuestion(new Question1("4. What is a widget in Android app?",
-                    new String[]{"reusable GUI element", "Layout for Activity", "device placed in cans of beer", "build toolkit"}, "reusable GUI element"));
-            /*myDataBaseHelper.addInitialQuestion(new Question("5. Q5?",
-                    new String[]{"A", "B", "Cr", "D"}, "A"));*/
+            myDataBaseHelper.addInitialQuestion(new Question1("1. What would the name of the setter method for the class variable named \"age\" be?",
+                    new String[]{"initAge", "setAge", "getAge", "Age"}, "setAge"));
+            myDataBaseHelper.addInitialQuestion(new Question1("2. What is the value of the following expression?\nMath.abs(Math.min(-6, 3));",
+                    new String[]{"-6", "6", "3", "-3"}, "6"));
+            myDataBaseHelper.addInitialQuestion(new Question1("3. Which access modifier explicitly says that a method or variable of an object can be accessed by code from outside of the class of that object?",
+                    new String[]{"private", "static", "public", "default"}, "public"));
+            myDataBaseHelper.addInitialQuestion(new Question1("4. What keyword makes a variable a constant?",
+                    new String[]{"static ", "final", "void", "Constant"}, "final"));
+            myDataBaseHelper.addInitialQuestion(new Question1("5. How many times can you call a method?",
+                    new String[]{"zero", "one", "only two", "as many as you want"}, "as many as you want"));
 
             list = myDataBaseHelper.getAllQuestionsList();//get list from database again
 

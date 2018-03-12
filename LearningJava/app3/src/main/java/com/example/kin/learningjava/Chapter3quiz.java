@@ -40,7 +40,7 @@ import android.widget.Toast;
 
 public class Chapter3quiz extends AppCompatActivity {
 
-    private Quiz2QuestionBank mQuestionLibrary = new Quiz2QuestionBank();
+    private Quiz3QuestionBank mQuestionLibrary = new Quiz3QuestionBank();
 
     private TextView mScoreView;   // view for current total score
     private TextView mQuestionView;  //current question to answer
@@ -54,8 +54,8 @@ public class Chapter3quiz extends AppCompatActivity {
     private int mQuestionNumber = 0; // current question number
 
     String name;
-    String testone;
-    String type = "submittestone";
+    String testthree;
+    String type = "submittestthree";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,13 +91,13 @@ public class Chapter3quiz extends AppCompatActivity {
         }
         else {
 
-            testone=Integer.toString(mScore);
+            testthree=Integer.toString(mScore);
             BackgroundWorker background = new BackgroundWorker(Chapter3quiz.this);
-            background.execute(type,name,testone);
-            Toast.makeText(Chapter3quiz.this, "Quiz2 completed", Toast.LENGTH_SHORT).show();
-            Intent jumpage = new Intent(Chapter3quiz.this, Quiz2result.class);
+            background.execute(type,name,testthree);
+            Toast.makeText(Chapter3quiz.this, "Quiz3 completed", Toast.LENGTH_SHORT).show();
+            Intent jumpage = new Intent(Chapter3quiz.this, Quiz1result.class);
             Bundle bundle = new Bundle();
-            bundle.putString("score",testone);// pass the current score to the second screen
+            bundle.putString("score",testthree);// pass the current score to the second screen
             bundle.putString("username",name);
             jumpage.putExtras(bundle);
             startActivity(jumpage);

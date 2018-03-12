@@ -41,16 +41,16 @@ public class Quiz3QuestionBank {
         list = myDataBaseHelper.getAllQuestionsList();//get questions/choices/answers from database
 
         if (list.isEmpty()) {//if list is empty, populate database with default questions/choices/answers
-            myDataBaseHelper.addInitialQuestion(new Question1("1. To distribute your application to different platforms, how many Java versions do you need to create?",
-                    new String[]{"Just one version", "One for each platform", "Two versions", "No version"}, "Just one version"));
-            myDataBaseHelper.addInitialQuestion(new Question1("2. What is the name of build toolkit for Android Studio?",
-                    new String[]{"JVM", "Gradle", "Dalvik", "HAXM"}, "Gradle"));
-            myDataBaseHelper.addInitialQuestion(new Question1("3. What widget can replace any use of radio buttons?",
-                    new String[]{"Toggle Button", "Spinner", "Switch Button", "ImageButton"}, "Spinner"));
-            myDataBaseHelper.addInitialQuestion(new Question1("4. What is a widget in Android app?",
-                    new String[]{"reusable GUI element", "Layout for Activity", "device placed in cans of beer", "build toolkit"}, "reusable GUI element"));
-            /*myDataBaseHelper.addInitialQuestion(new Question("5. Q5?",
-                    new String[]{"A", "B", "Cr", "D"}, "A"));*/
+            myDataBaseHelper.addInitialQuestion(new Question1("1. In Java, an array starts counting from...",
+                    new String[]{"-1", "0", "1", "2"}, "0"));
+            myDataBaseHelper.addInitialQuestion(new Question1("2. What is the output of this code?\nint tmp[ ] = {5, 8, 9, 3};\nSystem.out.println(tmp[2]);",
+                    new String[]{"5", "8", "9", "3"}, "9"));
+            myDataBaseHelper.addInitialQuestion(new Question1("3. What is the output of this code?\nString array[ ][ ] =  { {\"Hey\", \"John\", \"Bye\"},\\n{\"John\", \"Johnson\", \"Hello\"}};\nSystem.out.println(array[1][1]);",
+                    new String[]{"Hello", "John", "Hey", "Johnson"}, "Johnson"));
+            myDataBaseHelper.addInitialQuestion(new Question1("4. What is the output of this code?\nint arr[ ] = new int[3];\nfor (int i = 0; i < 3; i++) {\\n   arr[i] = i;}\n int res = arr[0] + arr[2];\nSystem.out.println(res);",
+                    new String[]{"2", "4", "6", "8"}, "2"));
+            myDataBaseHelper.addInitialQuestion(new Question1("5. What is the output of this code?\nint array[ ][ ] =  {{3, 5, 8}, {7, 54, 1, 12, 4}}; \nSystem.out.println(array[0][2]);",
+                    new String[]{"1", "8", "5", "54"}, "8"));
 
             list = myDataBaseHelper.getAllQuestionsList();//get list from database again
 
