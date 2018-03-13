@@ -9,7 +9,12 @@
     <string name="keyboard_name">JavaKeyboard</string>
     <string name="java_ime">Java IME</string>
     <string name="subtype_en_US">English (US)</string>
-    <string-array name="model" ><item>Q2_5bird</item></string-array>
+    <string-array name="model" >
+        <item>Q2_5bird</item>
+        <item>Q2_65,6,7,8,9,10</item>
+        <item>Q3_215</item>
+        <item>Q3_411</item>
+    </string-array>
     <string name="ex1">
 public class Main{\n\n
         public static void main(String[] args){\n\n
@@ -170,7 +175,13 @@ public class Main{\n\n
   }\n
             //Find the output of the program ______\n\n\n
 }</item>
-        <item></item>
+        <item> int x = 1;\n\n
+
+      while( x &lt; 10 ) {\n\n
+         System.out.print("value of x : " + x );\n\n
+         x++;\n\n
+      }\n
+            //Find the output of the program ______\n\n\n</item>
     <item>
         class Main {\n\n
         public static void main(String[] args) {\n\n
@@ -203,7 +214,18 @@ public class Main{\n\n
         }\n\n
         }
         </item>
-        <item></item>
+        <item>class Main {\n\n
+  public static void main(String[] args) {\n\n
+   int [ ] arr = {9,1,2,3};\n\n
+int sum=0;\n\n
+for(int x=0; x&lt;arr.length;x++){\n\n
+  sum+=arr[x];\n
+
+}\n
+System.out.println(sum);\n\n
+  }\n\n
+}\n\n
+      //Find the output of the program ______\n\n\n   </item>
 <item>
         class Main {\n\n
         public static void main(String[] args) {\n\n
@@ -214,7 +236,17 @@ public class Main{\n\n
         }\n\n
         }
 </item>
-        <item></item>
+        <item>class Main {\n\n
+  public static void main(String[] args) {\n\n
+    int[ ][ ] sample = { {8,11,3}, {12,5,4} };\n\n
+int x = sample[0][1];\n\n
+System.out.println(x);\n\n
+
+
+  }\n
+
+}\n\n
+        // Find the output of the program ______</item>
         <item>A constructor can perform any action, but\n\n designed to perform initializing actions, such \n\nas initializing the data fields of objects.</item>
         <item></item>
         <item></item>

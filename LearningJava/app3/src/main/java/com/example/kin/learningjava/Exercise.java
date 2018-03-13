@@ -65,13 +65,13 @@ public class Exercise extends AppCompatActivity {
         categories.add("Q2_3: Using else-if statement to evalute the smallest value of two numbers");
         categories.add("Q2_4: Using NOT operator to evalute a variable is not larger than 10");
         categories.add("Q2_5: Find the output of the program");
-        categories.add("Q2_6:");
+        categories.add("Q2_6: Find the output of the program");
         categories.add("Q2_7:Using for loop to print out 1 to 10");
         categories.add("Q2_8:Modify the answer of previous question to print out 1 to 10 using do-while loop (Hints: Using Increment inside the loop");
         categories.add("Q3_1:Write a program to initialize an array with \'H\' , \'E\',\'L\',\'L\',\'O\' (Hints:Use character array) ");
-        categories.add("Q3_2:");
+        categories.add("Q3_2:Find the output of the program");
         categories.add("Q3_3: Write a program to print the elements from an array {0,1,2,3,4,5}  using enhanced for loop ");
-        categories.add("Q3_4:");
+        categories.add("Q3_4:Find the output of the program");
         categories.add("Q4_1:What is the function of constructor");
         categories.add("Q4_2: ");
         categories.add("Q4_3: ");
@@ -196,12 +196,13 @@ public class Exercise extends AppCompatActivity {
                             for(String ans:anarray) {
                                 if (question.equals(ans.substring(0, 4))) {
                                     ans11 = ans.substring(4);
-                                    text2.setText(text2.getText().toString().replace("______", ans11));
+
                                 }
                             }
                             //text2.setText(text2.getText().toString().replace("______", anarray.toString()));
                             dialogButton11.setEnabled(false);
                             if(input11.equals(ans11)) {
+                                text2.setText(text2.getText().toString().replace("______", ans11));
                                /* Spannable ans = new SpannableString(ans11);
                                 SpannableStringBuilder builder = new SpannableStringBuilder();
 
@@ -218,8 +219,9 @@ public class Exercise extends AppCompatActivity {
                                 ans.setSpan(new ForegroundColorSpan(Color.RED), 0, ans.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
                                 builder.append(ans);*/
 
-                                input1.setText(input11+"(Incorrect)");
+                                input1.setHint(input11+"(Incorrect)");
                                 dialogButton11.setEnabled(true);
+                              //  text2.setText(text2.getText().toString().replace(ans11,"______"));
                                 input1.setTextColor(Color.rgb(255,0,0));
                             }
                         }
