@@ -21,7 +21,7 @@ public class Chapter4k extends AppCompatActivity {
         mwebview = (WebView) findViewById(R.id.webview);
         WebSettings webSettings = mwebview.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mwebview.loadUrl("https://leungwaikin.000webhostapp.com/Chapter4lkhtml");
+        mwebview.loadUrl("https://leungwaikin.000webhostapp.com/Chapter4k.html");
         jumppage1=(Button)findViewById(R.id.jump1);
         jumppage1.setOnClickListener(new View.OnClickListener(){
             @Override

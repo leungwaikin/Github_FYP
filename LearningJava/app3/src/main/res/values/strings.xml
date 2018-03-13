@@ -23,7 +23,7 @@ public class Main{\n\n
             /*We can use the println method to prints a line of text to the screen.
             The System class and its out stream are used to access to println method.*/
 
-            \n System.out.println(\"This is Q1-3 answer\");
+            \n System.out.println(\"This is Q1.3 answer\");
             \n \n }\n\n
             }</item>
 
@@ -85,7 +85,7 @@ public class Main{\n\n
         max=n2;\n
         return max;\n
         }\n
-        public static void main(String[] args) {\n
+        public static void main(String[] args) {\n\n
         int a = 11;\n
         int b = 12 ;\n
         int c = maxFunction(a,b);\n\n
@@ -93,6 +93,145 @@ public class Main{\n\n
         }\n\n
         }
     </item>
+<item>
+        import java.util.Scanner;\n\n
+
+        class Main {\n\n
+        public static void main(String[] args) {\n\n
+        Scanner sc = new Scanner(System.in);\n\n
+        if(sc.nextInt()>5)\n\n
+        System.out.println("too large");\n\n
+        }\n\n
+        }
+    </item>
+        <item>
+        import java.util.Scanner;\n\n
+
+        class Main {\n\n
+        public static void main(String[] args) {\n\n
+        Scanner sc = new Scanner(System.in);\n\n
+        if(sc.nextInt()>5)\n\n
+        System.out.println(\"too large\");\n\n
+        else  System.out.println(\"too small\");\n\n
+        } \n\n
+        }
+    </item>
+
+
+    <item>
+        class Main {\n\n
+        public static void main(String[] args) {\n\n
+        int num1=2;\n\n
+        int num2=1;\n\n
+         if(num1>num2){\n\n
+  System.out.println(num2 +\" is the smallest value\" );\n\n
+  }else if(!(num1>num2)){\n\n
+ System.out.println(num1 +\" is the smallest value\");\n\n
+        }\n\n
+        }\n\n
+        }
+    </item>
+
+    <item>
+        class Main {\n\n
+        public static void main(String[] args) {\n\n
+        int num=6;\n\n
+
+        if(!(num>10)){\n\n
+        System.out.println\"The number is not larger than 10\");\n\n
+        }\n\n
+        }\n\n
+        }\n
+         </item>
+        <item></item>
+        <item></item>
+    <item>
+        class Main {\n\n
+        public static void main(String[] args) {\n\n
+        for(int i=1;i&lt;=10i++){\n\n
+        System.out.println(i);\n\n
+        }\n\n
+        }\n\n
+        }   </item>
+
+
+
+<item>
+        class Main {\n\n
+        public static void main(String[] args) {\n\n
+        int x=1;\n
+        do{\n
+        System.out.println(x);\n
+        x++;\n
+        }while(x&lt;=10);\n
+
+        }\n\n
+        }\n
+</item>
+
+<item>
+        class Main {\n\n
+        public static void main(String[] args) {\n\n
+        char[] chararray ={\'H\',\'E\',\'L\',\'L\',\'O\'};\n\n
+        System.out.println(chararray);\n\n
+        }\n\n
+        }
+        </item>
+<item>
+        class Main {\n\n
+        public static void main(String[] args) {\n\n
+        int[] Intarray ={0,1,2,3,4,5};\n\n
+        for(int element:Intarray){\n\n
+        System.out.println(element);\n\n
+        }\n\n
+        }\n\n
+        }
+</item>
+        <item></item>
+        <item>A constructor can perform any action, but\n\n designed to perform initializing actions, such \n\nas initializing the data fields of objects.</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+<item>
+        class Main {\n\n
+        int age;\n\n
+
+        Main(int age){\n\n
+        this.age= age;\n\n
+        }\n\n
+
+
+        public static void main(String[] args) {\n\n
+
+        Main main = new Main(20);\n\n
+        System.out.print(main.age);\n\n
+
+        }\n\n
+        }
+        </item>
+        <item></item>
+        <item></item>
+        <item>
+            import java.lang.Math;\n\n
+
+class Main {\n\n
+
+  public static void main(String[] args) {\n\n
+    int num1=0;\n
+    int num2=1;\n\n\n
+
+
+   System.out.print(Math.min(num1,num2) + " is the minimum value");\n\n
+
+    }\n\n
+  }
+        </item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 
 </resources>

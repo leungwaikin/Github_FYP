@@ -17,14 +17,15 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/dialogButtonOK"
             android:layout_marginBottom="47dp"
-            android:text="Displpay"
+            android:text=""
             android:textColor="@color/translucent_red"
             android:layout_margin="25dp"
             android:textSize="15dp" />
     </ScrollView>
     <TableLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
         <TableRow>
 
             <Button
@@ -33,16 +34,23 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@id/dialogButtonShow"
+                android:text=" Copy " />
+            <Button
+                android:id="@+id/dialogButtonShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
                 android:layout_toLeftOf="@id/dialogButtonOK"
-                android:text=" Copy to clipboard " />
-
+                android:text=" Show answer " />
             <Button
                 android:id="@+id/dialogButtonOK"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
-                android:text="TRY IT MYSELF"
+                android:text="TRY MYSELF"
                 />
         </TableRow>
     </TableLayout>
