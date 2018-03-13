@@ -27,6 +27,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,39 +51,39 @@ public class Exercise extends AppCompatActivity {
 
         // Spinner Drop down elements
         List<String> categories = new ArrayList<String>();
-        categories.add("Q1.1: Run and execute the default program");
-        categories.add("Q1.2: Write a program printing out \"Java is amazing\" ");
-        categories.add("Q1.3: Use multi-line comments to describe the function of System.out.println");
-        categories.add("Q1.4: Write two variables to store and print \"String \" &  20.5");
-        categories.add("Q1.5: Write a program printing out the sum of 7+8 ( x + y )");
-        categories.add("Q1.6: Write a program and initialize the variables x & y to 10 , printing out x++ and ++y. Explain the difference ");
-        categories.add("Q1.7: Write a program and print out a string using String Concantenation ");
-        categories.add("Q1.8: Write a program to get input \"Java\" ");
-        categories.add("Q1.9: Write a program with a method to return the maximum of two numbers ");
-        categories.add("Q2.1: Write a program to get a user input, if the input is higher than 5 , print \"too large \" (assume that the input is an integer)");
-        categories.add("Q2.2: According to above question , when the input is higher than 5 , print  \"too large \" ,otherwise print  \"too small \" ");
-        categories.add("Q2.3: Using else-if statement to evalute the smallest value of two numbers");
-        categories.add("Q2.4: Using NOT operator to evalute a variable is not larger than 10");
-        categories.add("Q2.5: Find the output of the program");
-        categories.add("Q2.6:");
-        categories.add("Q2.7:Using for loop to print out 1 to 10");
-        categories.add("Q2.8:Modify the answer of previous question to print out 1 to 10 using do-while loop (Hints: Using Increment inside the loop");
-        categories.add("Q3.1:Write a program to initialize an array with \'H\' , \'E\',\'L\',\'L\',\'O\' (Hints:Use character array) ");
-        categories.add("Q3.2:");
-        categories.add("Q3.3: Write a program to print the elements from an array {0,1,2,3,4,5}  using enhanced for loop ");
-        categories.add("Q3.4:");
-        categories.add("Q4.1:What is the function of constructor");
-        categories.add("Q4.2: ");
-        categories.add("Q4.3: ");
-        categories.add("Q4.4: ");
-        categories.add("Q4.5: ");
-        categories.add("Q4.6: ");
-        categories.add("Q4.7: Write a main class program to set age attribute to 20 using the constuctor (Hints: The constructor could take one parameter)");
-        categories.add("Q4.8: ");
-        categories.add("Q4.9: Write a program to print the minimun value of two variable using Math class");
-        categories.add("Q4.10: ");
-        categories.add("Q4.11: ");
-        categories.add("Q4.12: ");
+        categories.add("Q1_1: Run and execute the default program");
+        categories.add("Q1_2: Write a program printing out \"Java is amazing\" ");
+        categories.add("Q1_3: Use multi-line comments to describe the function of System.out.println");
+        categories.add("Q1_4: Write two variables to store and print \"String \" &  20.5");
+        categories.add("Q1_5: Write a program printing out the sum of 7+8 ( x + y )");
+        categories.add("Q1_6: Write a program and initialize the variables x & y to 10 , printing out x++ and ++y. Explain the difference ");
+        categories.add("Q1_7: Write a program and print out a string using String Concantenation ");
+        categories.add("Q1_8: Write a program to get input \"Java\" ");
+        categories.add("Q1_9: Write a program with a method to return the maximum of two numbers ");
+        categories.add("Q2_1: Write a program to get a user input, if the input is higher than 5 , print \"too large \" (assume that the input is an integer)");
+        categories.add("Q2_2: According to above question , when the input is higher than 5 , print  \"too large \" ,otherwise print  \"too small \" ");
+        categories.add("Q2_3: Using else-if statement to evalute the smallest value of two numbers");
+        categories.add("Q2_4: Using NOT operator to evalute a variable is not larger than 10");
+        categories.add("Q2_5: Find the output of the program");
+        categories.add("Q2_6:");
+        categories.add("Q2_7:Using for loop to print out 1 to 10");
+        categories.add("Q2_8:Modify the answer of previous question to print out 1 to 10 using do-while loop (Hints: Using Increment inside the loop");
+        categories.add("Q3_1:Write a program to initialize an array with \'H\' , \'E\',\'L\',\'L\',\'O\' (Hints:Use character array) ");
+        categories.add("Q3_2:");
+        categories.add("Q3_3: Write a program to print the elements from an array {0,1,2,3,4,5}  using enhanced for loop ");
+        categories.add("Q3_4:");
+        categories.add("Q4_1:What is the function of constructor");
+        categories.add("Q4_2: ");
+        categories.add("Q4_3: ");
+        categories.add("Q4_4: ");
+        categories.add("Q4_5: ");
+        categories.add("Q4_6: ");
+        categories.add("Q4_7: Write a main class program to set age attribute to 20 using the constuctor (Hints: The constructor could take one parameter)");
+        categories.add("Q4_8: ");
+        categories.add("Q4_9: Write a program to print the minimun value of two variable using Math class");
+        categories.add("Q4_10: ");
+        categories.add("Q4_11: ");
+        categories.add("Q4_12: ");
 
 
 
@@ -188,10 +189,17 @@ public class Exercise extends AppCompatActivity {
                     dialogButton11.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            String input11 = input1.getText().toString();
-                            String ans11=context.getResources().getString(R.string.Q2_5);
-
-                            text2.setText(text2.getText().toString().replace("______",ans11));
+                            String input11 = input1.getText().toString().replaceAll(" ","");
+                            String question = spinner.getSelectedItem().toString().substring(0,4);
+                            String[] anarray=context.getResources().getStringArray(R.array.model);
+                            String ans11="";
+                            for(String ans:anarray) {
+                                if (question.equals(ans.substring(0, 4))) {
+                                    ans11 = ans.substring(4);
+                                    text2.setText(text2.getText().toString().replace("______", ans11));
+                                }
+                            }
+                            //text2.setText(text2.getText().toString().replace("______", anarray.toString()));
                             dialogButton11.setEnabled(false);
                             if(input11.equals(ans11)) {
                                /* Spannable ans = new SpannableString(ans11);
@@ -211,6 +219,7 @@ public class Exercise extends AppCompatActivity {
                                 builder.append(ans);*/
 
                                 input1.setText(input11+"(Incorrect)");
+                                dialogButton11.setEnabled(true);
                                 input1.setTextColor(Color.rgb(255,0,0));
                             }
                         }

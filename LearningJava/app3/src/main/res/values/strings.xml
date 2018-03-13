@@ -9,7 +9,7 @@
     <string name="keyboard_name">JavaKeyboard</string>
     <string name="java_ime">Java IME</string>
     <string name="subtype_en_US">English (US)</string>
-    <string name="Q2.5">bird</string>
+    <string-array name="model" ><item>Q2_5bird</item></string-array>
     <string name="ex1">
 public class Main{\n\n
         public static void main(String[] args){\n\n
