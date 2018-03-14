@@ -14,6 +14,12 @@
         <item>Q2_65,6,7,8,9,10</item>
         <item>Q3_215</item>
         <item>Q3_411</item>
+        <item>Q4_2HelloWorld()</item>
+        <item>Q4_3String</item>
+        <item>Q4_4Main myDog = new Main(\"yellow\",4);</item>
+        <item>Q4_6public String getColor(){return color;}</item>
+        <item>Q4_85</item>
+        <item>Q4_Limport mypack.Simple;</item>
     </string-array>
     <string name="ex1">
 public class Main{\n\n
@@ -248,11 +254,74 @@ System.out.println(x);\n\n
 }\n\n
         // Find the output of the program ______</item>
         <item>A constructor can perform any action, but\n\n designed to perform initializing actions, such \n\nas initializing the data fields of objects.</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>class Main {\n\n
+
+  static void ______() {\n\n
+    System.out.println(\"Hello World!\");\n\n
+  }\n\n
+
+  public static void main(String[ ] args) {\n\n
+    HelloWorld();\n\n
+
+  }\n\n
+}\n\n
+
+// Hello World!\n\n\n</item>
+
+        <item>class Main {\n\n
+
+ public ______ sum(int num) {\n\n
+  if(num==5){\n\n
+       return \"Return value is \"+ num;\n\n
+  }\n\n
+  else{\n\n
+    return "Return value is not 5";\n\n
+  }\n\n
+
+
+}\n\n
+
+  public static void main(String[ ] args) {\n\n
+    Main a = new Main();\n\n
+   System.out.println(a.sum(4));\n\n
+
+
+  }\n\n
+}\n\n\n
+
+</item>
+        <item>class Main {\n\n
+
+   String color;\n\n
+   int age;\n\n
+
+   public Main(String color,int age) {\n\n
+    this.color=color;\n
+    this.age=age;\n\n
+
+   }\n\n
+
+   public static void main(String []args) {\n\n
+      // Following statement would create an object Dog\n\n
+     ______\n\n
+
+
+	   System.out.println(\" Color  :  \" + myDog.color +\" Age :  \" +myDog.age);\n\n
+   }\n\n
+}\n\n\n</item>
+        <item>Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass.</item>
+        <item>public class Car {\n\n
+  private String color;\n\n
+
+  //Write a Getter method\n
+ ______\n\n
+
+ // Setter method\n\n
+  public void setColor(String c) {\n\n
+    this.color = c;\n\n
+  //The keyword this is used to refer to the current object.\n\n
+  }\n\n
+}\n\n</item>
 
 <item>
         class Main {\n\n
@@ -272,7 +341,17 @@ System.out.println(x);\n\n
         }
         </item>
 
-        <item></item>
+        <item>public class valueType {\n\n
+  public static void main(String[ ] args) {\n\n
+    int x = 5;\n
+    Increment(x);\n
+    System.out.println(x);\n
+  }\n
+  static void Increment(int num) {\n
+    num = num + 1;\n
+  }\n
+}\n\n
+       // Find the output of the program ______\n\n\n </item>
         <item>
             import java.lang.Math;\n\n
 
@@ -288,9 +367,25 @@ class Main {\n\n
     }\n\n
   }
         </item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>-The static method can not use non static data member (eg variable)or call non-static method directly.\n \n
+            OR \n\n
+
+-this and super cannot be used in static context.
+
+</item>
+        <item>We can use final keyword with method, attribute or class.\n
+            A variable marked with final can be assigned only once.\n\n\n
+            A method or class marked with final\n
+            so that they can\'t be overridden and classes
+            therefore they can\'t be made subclasses.\n
+        </item>
+        <item>package mypack; \n\n
+public class Simple{  \n\n
+ public static void main(String args[]){\n\n
+    System.out.println("Welcome to mypack package");\n\n
+   }  \n\n
+}  \n\n
+       // ans:  ______</item>
     </string-array>
 
 </resources>

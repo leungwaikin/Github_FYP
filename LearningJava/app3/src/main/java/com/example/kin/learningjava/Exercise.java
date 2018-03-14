@@ -66,24 +66,24 @@ public class Exercise extends AppCompatActivity {
         categories.add("Q2_4: Using NOT operator to evalute a variable is not larger than 10");
         categories.add("Q2_5: Find the output of the program");
         categories.add("Q2_6: Find the output of the program");
-        categories.add("Q2_7:Using for loop to print out 1 to 10");
-        categories.add("Q2_8:Modify the answer of previous question to print out 1 to 10 using do-while loop (Hints: Using Increment inside the loop");
-        categories.add("Q3_1:Write a program to initialize an array with \'H\' , \'E\',\'L\',\'L\',\'O\' (Hints:Use character array) ");
-        categories.add("Q3_2:Find the output of the program");
+        categories.add("Q2_7: Using for loop to print out 1 to 10");
+        categories.add("Q2_8: Modify the answer of previous question to print out 1 to 10 using do-while loop (Hints: Using Increment inside the loop");
+        categories.add("Q3_1: Write a program to initialize an array with \'H\' , \'E\',\'L\',\'L\',\'O\' (Hints:Use character array) ");
+        categories.add("Q3_2: Find the output of the program");
         categories.add("Q3_3: Write a program to print the elements from an array {0,1,2,3,4,5}  using enhanced for loop ");
-        categories.add("Q3_4:Find the output of the program");
-        categories.add("Q4_1:What is the function of constructor");
-        categories.add("Q4_2: ");
-        categories.add("Q4_3: ");
-        categories.add("Q4_4: ");
-        categories.add("Q4_5: ");
-        categories.add("Q4_6: ");
+        categories.add("Q3_4: Find the output of the program");
+        categories.add("Q4_1: What is the function of constructor");
+        categories.add("Q4_2: Fill in the blank to complete the program");
+        categories.add("Q4_3: Fill in the blank to complete the program");
+        categories.add("Q4_4: Fill in the blank to complete the program(declare the color attribute to \"yello\" and age attribute to 4 ");
+        categories.add("Q4_5: Write down  the characteristic(s) of \"protected\" access modifier");
+        categories.add("Q4_6: Write a getter method for the program");
         categories.add("Q4_7: Write a main class program to set age attribute to 20 using the constuctor (Hints: The constructor could take one parameter)");
-        categories.add("Q4_8: ");
+        categories.add("Q4_8: Find the output of the program");
         categories.add("Q4_9: Write a program to print the minimun value of two variable using Math class");
-        categories.add("Q4_10: ");
-        categories.add("Q4_11: ");
-        categories.add("Q4_12: ");
+        categories.add("Q4_J: List one restriction of using static method ");
+        categories.add("Q4_K: Write down  the characteristic(s) of \"final\" ");
+        categories.add("Q4_L: Write down the import statement so as to import a class named Simple ");
 
 
 
@@ -161,8 +161,8 @@ public class Exercise extends AppCompatActivity {
                 }*/
 
 
-// 3. Get the AlertDialog from create()
-                if (spinner.getSelectedItemPosition()==13||spinner.getSelectedItemPosition()==14||spinner.getSelectedItemPosition()==18||spinner.getSelectedItemPosition()==20||spinner.getSelectedItemPosition()==22||spinner.getSelectedItemPosition()==23||spinner.getSelectedItemPosition()==24||spinner.getSelectedItemPosition()==25||spinner.getSelectedItemPosition()==26) {
+// 3. Get the AlertDialog from create() 25 is Q4_5
+                if (spinner.getSelectedItemPosition()==13||spinner.getSelectedItemPosition()==14||spinner.getSelectedItemPosition()==18||spinner.getSelectedItemPosition()==20||spinner.getSelectedItemPosition()==22||spinner.getSelectedItemPosition()==23||spinner.getSelectedItemPosition()==24||spinner.getSelectedItemPosition()==26||spinner.getSelectedItemPosition()==28||spinner.getSelectedItemPosition()==32) {
                     AlertDialog.Builder builder2 = new AlertDialog.Builder(context);
                     builder2.setView(R.layout.exercisequestion2);
                     builder2.setTitle(spinner.getSelectedItem().toString());
@@ -174,7 +174,7 @@ public class Exercise extends AppCompatActivity {
                     final TextView text2 = (TextView) dialog2.findViewById(R.id.textView17);
 
                     for (int i = 0; i <= exercises.length; i++) {
-                        if (spinner.getSelectedItemPosition() == 13 || spinner.getSelectedItemPosition() == 14 || spinner.getSelectedItemPosition() == 18 || spinner.getSelectedItemPosition() == 20 || spinner.getSelectedItemPosition() == 22 || spinner.getSelectedItemPosition() == 23 || spinner.getSelectedItemPosition() == 24 || spinner.getSelectedItemPosition() == 25 || spinner.getSelectedItemPosition() == 26) {
+                        if (spinner.getSelectedItemPosition() == 13 || spinner.getSelectedItemPosition() == 14 || spinner.getSelectedItemPosition() == 18 || spinner.getSelectedItemPosition() == 20 || spinner.getSelectedItemPosition() == 22 || spinner.getSelectedItemPosition() == 23 || spinner.getSelectedItemPosition() == 24  || spinner.getSelectedItemPosition() == 26||spinner.getSelectedItemPosition()==28||spinner.getSelectedItemPosition()==32) {
                             if (spinner.getSelectedItemPosition() == i) {
                                         text2.setText(exercises[i]);
                                         text2.setTextSize(22);
@@ -189,6 +189,7 @@ public class Exercise extends AppCompatActivity {
                     dialogButton11.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
+                            String inputOrginal = input1.getText().toString();
                             String input11 = input1.getText().toString().replaceAll(" ","");
                             String question = spinner.getSelectedItem().toString().substring(0,4);
                             String[] anarray=context.getResources().getStringArray(R.array.model);
@@ -199,9 +200,12 @@ public class Exercise extends AppCompatActivity {
 
                                 }
                             }
+                            String ans12 = ans11.toString().replaceAll(" ","");
+                            //text2.setText(text2.getText().toString().replace("______", " "+ans12));
+                            //input1.setText(input11);
                             //text2.setText(text2.getText().toString().replace("______", anarray.toString()));
                             dialogButton11.setEnabled(false);
-                            if(input11.equals(ans11)) {
+                            if(input11.equals(""+ans12)) {
                                 text2.setText(text2.getText().toString().replace("______", ans11));
                                /* Spannable ans = new SpannableString(ans11);
                                 SpannableStringBuilder builder = new SpannableStringBuilder();
@@ -209,17 +213,17 @@ public class Exercise extends AppCompatActivity {
                                 ans.setSpan(new ForegroundColorSpan(Color.RED), 0, ans.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
                                 builder.append(ans);*/
 
-                                input1.setText(input11+"(Correct)");
+                                input1.setText(inputOrginal+"(Correct)");
                                 input1.setTextColor(Color.rgb(0,255,0));
                             }
-                            if(!input11.equals(ans11)) {
+                            if(!input11.equals(ans12)) {
                                /* Spannable ans = new SpannableString(ans11);
                                 SpannableStringBuilder builder = new SpannableStringBuilder();
 
                                 ans.setSpan(new ForegroundColorSpan(Color.RED), 0, ans.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
                                 builder.append(ans);*/
 
-                                input1.setHint(input11+"(Incorrect)");
+                                input1.setHint(inputOrginal+"(Incorrect)");
                                 dialogButton11.setEnabled(true);
                               //  text2.setText(text2.getText().toString().replace(ans11,"______"));
                                 input1.setTextColor(Color.rgb(255,0,0));
