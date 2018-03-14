@@ -20,6 +20,22 @@
         <item>Q4_6public String getColor(){return color;}</item>
         <item>Q4_85</item>
         <item>Q4_Limport mypack.Simple;</item>
+        <item>Q5_1private</item>
+        <item>Q5_2Programmer extends Employee</item>
+        <item>Q5_3running safely with 120km</item>
+        <item>Q6_2start()</item>
+        <item>Q6_3[Green, Red, Orange]</item>
+        <item>Q6_5130</item>
+        <item>Q6_6[ABC, DEF]</item>
+        <item>Q6_7[2,10,10,33,34]</item>
+        <item>Q6_8
+        while(it.hasNext()) { value = (String) it.next(); System.out.println(value); }
+       </item>
+        <item>Q6_9exists()</item>
+        <item>Q6_JFile file = new File(\"C:\\\\ITDog\\\\test.txt\");</item>
+        <item>Q6_Kformat</item>
+
+
     </string-array>
     <string name="ex1">
 public class Main{\n\n
@@ -386,6 +402,207 @@ public class Simple{  \n\n
    }  \n\n
 }  \n\n
        // ans:  ______</item>
+        <item> class BankAccount {\n\n
+  ______ double balance=0;\n\n
+  public void deposit(double x) {\n\n
+    if(x > 0) {\n\n
+      balance += x;\n\n
+    }\n\n
+  }\n\n
+}\n\n\n</item>
+        <item>
+            class Employee{ \n\n
+ float salary=50000;  \n\n
+}  \n\n
+class  ______{\n\n
+ int bonus=50000; \n\n
+ public static void main(String args[]){\n\n
+   Programmer p=new Programmer();  \n\n
+   System.out.println(\"Programmer salary is:\"+p.salary);\n\n
+   System.out.println(\"Bonus of Programmer is:\"+p.bonus);  \n\n
+}  \n\n
+}  \n\n
+        </item>
+        <item>
+            class Car{  \n\n
+  void run(){System.out.println(\"running\");\n\n}
+}  \n\n
+class Vehicle extends Car{\n\n
+  void run(){System.out.println(\"running safely with 120km\");\n\n}\n\n
+
+  public static void main(String args[]){  \n\n
+    Car b = new Vehicle();//upcasting  \n\n
+    b.run();  \n\n
+  }  \n\n
+}  \n\n
+            //The output is : ______\n\n\n\n
+        </item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+
+        <item>Java throw keyword is used to explicitly throw an exception.Java throws keyword is used to declare an exception.\n\n
+
+OR
+\n\n
+Checked exception cannot be propagated using throw only.Checked exception can be propagated with throws.\n\n
+
+OR\n\n
+
+Throw is followed by an instance.Throws is followed by class.
+Throw is used within the method.Throws is used with the method signature.\n\n
+
+OR\n\n
+
+You cannot throw multiple exceptions.You can declare multiple exceptions through throws e.g.\n
+public void method()throws IOException,SQLException.\n
+</item>
+        <item>
+            class MyThread extends Thread{  \n\n
+public void run(){  \n\n
+System.out.println(\"thread is running...\");  \n\n
+}  \n\n
+public static void main(String args[]){  \n\n
+MyThread t1=new MyThread();  \n\n
+t1.______;  \n\n
+ }  \n\n
+} \n\n
+// Output : thread is running...\n\n\n\n
+        </item>
+        <item>import java.util.ArrayList;\n\n
+
+public class Main {\n\n
+  public static void main(String[ ] args) {\n\n
+    ArrayList colors = new ArrayList();\n\n
+    colors.add(\"Blue\");\n
+    colors.add(\"Green\");\n
+    colors.add(\"Red\");\n
+    colors.add(\"Orange\");\n
+    colors.remove(\"Blue\");\n\n
+    System.out.println(colors);\n\n
+  }\n\n
+}\n\n
+// Output: ______\n\n\n</item>
+        <item>The ArrayList is better for storing and accessing data, as it is very similar to a normal array.\n\n\n
+The LinkedList is better for manipulating data, such as making numerous inserts and deletes.\n</item>
+        <item>import java.util.HashMap;\n\n
+public class Main {\n\n
+  public static void main(String[ ] args) {\n\n
+    HashMap points = new HashMap();\n
+    points.put(\"John\", 40);\n
+    points.remove(\"John\");\n
+    points.put(\"Peter\", 154);\n
+    points.put(\"Bob\", 30);\n
+    points.put(\"John\", 130);\n
+    System.out.println(points.get(\"John\"));
+  }\n\n
+}\n\n
+// Outputs ______\n\n\n</item>
+        <item>import java.util.HashSet;\n\n
+
+public class Main {\n\n
+  public static void main(String[ ] args) {\n\n
+    HashSet set = new HashSet();\n\n
+    set.add(\"ABC\");\n
+    set.add(\"DEF\");\n
+    set.add(\"DEF\");\n
+
+    System.out.println(set);\n\n
+  }\n\n
+}\n\n
+//  Output: ______\n\n\n</item>
+        <item>import java.util.ArrayList;\n\n
+import java.util.Collections;\n\n
+
+public class Main {\n\n
+  public static void main(String[ ] args) {\n\n
+    ArrayList nums = new ArrayList();\n
+    nums.add(10);\n
+    nums.add(10);\n
+    nums.add(33);\n
+    nums.add(34);\n
+    nums.add(2);\n
+
+    Collections.sort(nums);\n
+    System.out.println(nums);\n
+  }\n\n
+}\n\n
+            // Output : ______ \n\n\n
+</item>
+        <item>
+            import java.util.Iterator;\n
+import java.util.LinkedList;\n\n
+public class Main {\n\n
+  public static void main(String[ ] args) {\n\n
+    LinkedList animals = new LinkedList();\n\n
+    String value=\"\";\n
+    animals.add(\"tiger\");\n
+    animals.add(\"lion\");\n
+    animals.add(\"bird\");\n
+    animals.add(\"monkey\");\n\n
+
+       Iterator it = animals.iterator();\n\n
+        //use variable value to assign the LinkedList value (Hints: use hasNext()to evaluate the existence of next element)\n\n
+       ______\n\n
+
+  }\n\n
+}\n\n
+/*\n\n
+Output:\n
+tiger\n
+lion\n
+bird\n
+monkey\n
+*/\n\n\n\n
+        </item>
+        <item>______</item>
+        <item>import java.io.File;\n
+import java.io.FileNotFoundException;\n
+import java.util.Scanner;\n\n
+public class Main {\n\n
+
+public static void main(String[] args) {\n\n
+//create a file object where the file location : \"C:\\ITDog\\test.txt\"
+    ______\n\n
+
+
+    try {\n\n
+
+        Scanner sc = new Scanner(file);\n\n
+
+        while (sc.hasNextLine()) {\n
+            int i = sc.nextInt();\n
+            System.out.println(i);\n
+        }\n
+        sc.close();\n
+    } \n
+    catch (FileNotFoundException e) {\n
+        e.printStackTrace();\n
+    }\n
+ }\n
+}\n\n\n</item>
+        <item>import java.util.Formatter;\n\n
+
+public class Main {\n\n
+   public static void main(String[ ] args) {\n\n
+  try {\n\n
+    Formatter f = new \n Formatter(\"C:\\\\ITDog\\\\test.txt\");\n
+    f.______(\"%s %s %s\", \"3\",\"John\", \"Chan \r\n\");\n
+    f.______(\"%s %s %s\", \"2\",\"May\", \"Chan\");\n
+    f.close();    \n
+  } catch (Exception e) {\n
+    System.out.println(\"Error\");\n
+  }\n
+  }\n\n
+}\n\n\n</item>
     </string-array>
 
 </resources>

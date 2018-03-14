@@ -60,6 +60,7 @@ public class Exercise extends AppCompatActivity {
         categories.add("Q1_7: Write a program and print out a string using String Concantenation ");
         categories.add("Q1_8: Write a program to get input \"Java\" ");
         categories.add("Q1_9: Write a program with a method to return the maximum of two numbers ");
+
         categories.add("Q2_1: Write a program to get a user input, if the input is higher than 5 , print \"too large \" (assume that the input is an integer)");
         categories.add("Q2_2: According to above question , when the input is higher than 5 , print  \"too large \" ,otherwise print  \"too small \" ");
         categories.add("Q2_3: Using else-if statement to evalute the smallest value of two numbers");
@@ -68,16 +69,18 @@ public class Exercise extends AppCompatActivity {
         categories.add("Q2_6: Find the output of the program");
         categories.add("Q2_7: Using for loop to print out 1 to 10");
         categories.add("Q2_8: Modify the answer of previous question to print out 1 to 10 using do-while loop (Hints: Using Increment inside the loop");
+
         categories.add("Q3_1: Write a program to initialize an array with \'H\' , \'E\',\'L\',\'L\',\'O\' (Hints:Use character array) ");
         categories.add("Q3_2: Find the output of the program");
         categories.add("Q3_3: Write a program to print the elements from an array {0,1,2,3,4,5}  using enhanced for loop ");
         categories.add("Q3_4: Find the output of the program");
+
         categories.add("Q4_1: What is the function of constructor");
         categories.add("Q4_2: Fill in the blank to complete the program");
         categories.add("Q4_3: Fill in the blank to complete the program");
         categories.add("Q4_4: Fill in the blank to complete the program(declare the color attribute to \"yello\" and age attribute to 4 ");
-        categories.add("Q4_5: Write down  the characteristic(s) of \"protected\" access modifier");
-        categories.add("Q4_6: Write a getter method for the program");
+        categories.add("Q4_5: Write down the characteristic(s) of \"protected\" access modifier");
+        categories.add("Q4_6: Write a getter method for the program(Beaware of wordings)");
         categories.add("Q4_7: Write a main class program to set age attribute to 20 using the constuctor (Hints: The constructor could take one parameter)");
         categories.add("Q4_8: Find the output of the program");
         categories.add("Q4_9: Write a program to print the minimun value of two variable using Math class");
@@ -85,7 +88,31 @@ public class Exercise extends AppCompatActivity {
         categories.add("Q4_K: Write down  the characteristic(s) of \"final\" ");
         categories.add("Q4_L: Write down the import statement so as to import a class named Simple ");
 
+        categories.add("Q5_1: Fill in the blank so that the program can achieve encapsulation");
+        categories.add("Q5_2: FIll in the blank to create a subclass object");
+        categories.add("Q5_3: Write down the output of the program");
+        categories.add("Q5_4: ");
+        categories.add("Q5_5: ");
+        categories.add("Q5_6: ");
+        categories.add("Q5_7: ");
+        categories.add("Q5_8: ");
+        categories.add("Q5_9: ");
+        categories.add("Q5_J: ");
+        categories.add("Q5_K: ");
+        categories.add("Q5_L: ");
+        categories.add("Q5_M: ");
 
+        categories.add("Q6_1: State the difference(s) between \"throw\" and \"throws\" ");
+        categories.add("Q6_2: Fill in the blank to complete the Thread program");
+        categories.add("Q6_3: Write the output of the program");
+        categories.add("Q6_4: Between ArrayList and LinkList, state which one is better for storage , which one is better for manipulation");
+        categories.add("Q6_5: Wrtie down the output of the HashMap program");
+        categories.add("Q6_6: Wrtie down the output of the HashSet program");
+        categories.add("Q6_7: Wrtie down the output of the sorted list");
+        categories.add("Q6_8: Complete the program to print out the according output");
+        categories.add("Q6_9: Write down the method which can check whether a file exists before working on file");
+        categories.add("Q6_J: Fill in the blank to complete the I/O program ");
+        categories.add("Q6_K: Fill in the blank to complete the file formatter program ");
 
 
         // Creating adapter for spinner
@@ -107,9 +134,9 @@ public class Exercise extends AppCompatActivity {
         //String url = "https://repl.it/@steveysh/UnsightlyMetallicAdministrator";
         mwebview.loadUrl("https://repl.it/repls/NoteworthyIdenticalSpheres");
 
-       /* mwebview.loadUrl("javascript:(function() { " +
-                "var head = document.getElementsByClassName('header').style.display='none'; " +
-                "})()");*/
+       mwebview.loadUrl("javascript:(function() { " +
+                "var head = document.getElementsByClassName('jsx-96056714 wrapper').style.display='none'; " +
+                "})()");
         mwebview.getSettings().setUseWideViewPort(true);
         mwebview.getSettings().setLoadWithOverviewMode(true);
         //Getting the instance of Spinner and applying OnItemSelectedListener on it
@@ -162,7 +189,7 @@ public class Exercise extends AppCompatActivity {
 
 
 // 3. Get the AlertDialog from create() 25 is Q4_5
-                if (spinner.getSelectedItemPosition()==13||spinner.getSelectedItemPosition()==14||spinner.getSelectedItemPosition()==18||spinner.getSelectedItemPosition()==20||spinner.getSelectedItemPosition()==22||spinner.getSelectedItemPosition()==23||spinner.getSelectedItemPosition()==24||spinner.getSelectedItemPosition()==26||spinner.getSelectedItemPosition()==28||spinner.getSelectedItemPosition()==32) {
+                if (spinner.getSelectedItemPosition()==13||spinner.getSelectedItemPosition()==14||spinner.getSelectedItemPosition()==18||spinner.getSelectedItemPosition()==20||spinner.getSelectedItemPosition()==22||spinner.getSelectedItemPosition()==23||spinner.getSelectedItemPosition()==24||spinner.getSelectedItemPosition()==26||spinner.getSelectedItemPosition()==28||spinner.getSelectedItemPosition()>=32&&!(spinner.getSelectedItemPosition()==46)&&!(spinner.getSelectedItemPosition()==49)) {
                     AlertDialog.Builder builder2 = new AlertDialog.Builder(context);
                     builder2.setView(R.layout.exercisequestion2);
                     builder2.setTitle(spinner.getSelectedItem().toString());
@@ -172,9 +199,9 @@ public class Exercise extends AppCompatActivity {
                     dialog2.show();
                     String[] exercises = context.getResources().getStringArray(R.array.exercises);
                     final TextView text2 = (TextView) dialog2.findViewById(R.id.textView17);
-
+//Q5_2 34 Q6_1 46
                     for (int i = 0; i <= exercises.length; i++) {
-                        if (spinner.getSelectedItemPosition() == 13 || spinner.getSelectedItemPosition() == 14 || spinner.getSelectedItemPosition() == 18 || spinner.getSelectedItemPosition() == 20 || spinner.getSelectedItemPosition() == 22 || spinner.getSelectedItemPosition() == 23 || spinner.getSelectedItemPosition() == 24  || spinner.getSelectedItemPosition() == 26||spinner.getSelectedItemPosition()==28||spinner.getSelectedItemPosition()==32) {
+                        if (spinner.getSelectedItemPosition() == 13 || spinner.getSelectedItemPosition() == 14 || spinner.getSelectedItemPosition() == 18 || spinner.getSelectedItemPosition() == 20 || spinner.getSelectedItemPosition() == 22 || spinner.getSelectedItemPosition() == 23 || spinner.getSelectedItemPosition() == 24  || spinner.getSelectedItemPosition() == 26||spinner.getSelectedItemPosition()==28||spinner.getSelectedItemPosition()>=32&&!(spinner.getSelectedItemPosition()==46)&&!(spinner.getSelectedItemPosition()==49)) {
                             if (spinner.getSelectedItemPosition() == i) {
                                         text2.setText(exercises[i]);
                                         text2.setTextSize(22);
