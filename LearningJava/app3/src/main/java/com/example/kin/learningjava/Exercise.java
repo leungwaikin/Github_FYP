@@ -91,16 +91,16 @@ public class Exercise extends AppCompatActivity {
         categories.add("Q5_1: Fill in the blank so that the program can achieve encapsulation");
         categories.add("Q5_2: FIll in the blank to create a subclass object");
         categories.add("Q5_3: Write down the output of the program");
-        categories.add("Q5_4: ");
-        categories.add("Q5_5: ");
-        categories.add("Q5_6: ");
-        categories.add("Q5_7: ");
-        categories.add("Q5_8: ");
-        categories.add("Q5_9: ");
-        categories.add("Q5_J: ");
-        categories.add("Q5_K: ");
-        categories.add("Q5_L: ");
-        categories.add("Q5_M: ");
+        categories.add("Q5_4: Fill in the blank of the following statement");
+        categories.add("Q5_5: Fill in the blank of the abstract class");
+        categories.add("Q5_6: State whether the following fragment code is correct or wrong");
+        categories.add("Q5_7: Complete the following fragment code of type casting");
+        categories.add("Q5_8: State the following fragment code is upcasting of downcasting");
+        categories.add("Q5_9: (Unfinished)");
+        categories.add("Q5_J: (Unfinished)");
+        categories.add("Q5_K: Evalute the following program return true or false");
+        categories.add("Q5_L: Complete the program to print out the according output");
+        categories.add("Q5_M: Write the import statement that the package is mainly for creating user interfaces and for painting graphics and images");
 
         categories.add("Q6_1: State the difference(s) between \"throw\" and \"throws\" ");
         categories.add("Q6_2: Fill in the blank to complete the Thread program");
@@ -167,11 +167,11 @@ public class Exercise extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 TextView title = new TextView(context);
                 if (spinner.getSelectedItem().toString().length() > 50 && spinner.getSelectedItem().toString().length() <= 100) {
-                    title.setTextSize(15);
-                } else if (spinner.getSelectedItem().toString().length() <= 50) {
                     title.setTextSize(20);
+                } else if (spinner.getSelectedItem().toString().length() <= 50) {
+                    title.setTextSize(25);
                 } else if (spinner.getSelectedItem().toString().length() > 100) {
-                    title.setTextSize(15);
+                    title.setTextSize(20);
                 }
                 title.setText(spinner.getSelectedItem().toString() + ".");
                 title.setPadding(5, 5, 0, 0);

@@ -23,13 +23,20 @@
         <item>Q5_1private</item>
         <item>Q5_2Programmer extends Employee</item>
         <item>Q5_3running safely with 120km</item>
+        <item>Q5_4overloading</item>
+        <item>Q5_5abstract void soundEffect();</item>
+        <item>Q5_6wrong</item>
+        <item>Q5_7(int)</item>
+        <item>Q5_8downcasting</item>
+        <item>Q5_LSoldier.BOMB</item>
+        <item>Q5_Mimport java.awt.*;</item>
+        <item>Q5_Kfalse</item>
         <item>Q6_2start()</item>
         <item>Q6_3[Green, Red, Orange]</item>
         <item>Q6_5130</item>
         <item>Q6_6[ABC, DEF]</item>
         <item>Q6_7[2,10,10,33,34]</item>
-        <item>Q6_8
-        while(it.hasNext()) { value = (String) it.next(); System.out.println(value); }
+        <item>Q6_8while(it.hasNext()) { value = (String) it.next(); System.out.println(value); }
        </item>
         <item>Q6_9exists()</item>
         <item>Q6_JFile file = new File(\"C:\\\\ITDog\\\\test.txt\");</item>
@@ -437,16 +444,77 @@ class Vehicle extends Car{\n\n
 }  \n\n
             //The output is : ______\n\n\n\n
         </item>
+        <item>\n\nWe can set two methods which have the same name, but different parameters, it is known as method ______. This can be very useful that you can use the same method with different types of parameters.</item>
+        <item>abstract class Animal {\n\n
+  int legs = 0;\n
+  ______\n\n
+}\n\n
+
+
+class Cat extends Animal {\n\n
+  public void soundEffect() {\n\n
+    System.out.println(\"wo\");\n\n
+  }\n\n
+}\n\n</item>
+        <item>public interface SomethingIsWrong {\n\n
+    void aMethod(int aValue) {\n\n
+        System.out.println("Hi Mom");\n\n
+    }\n\n
+}\n\n\n\n
+        //ans(correct or wrong):   ______ \n\n\n\n</item>
+        <item>double a =5.3;\n
+            int b = ______ a;\n
+System.out.println(b);\n
+//Outputs 5\n\n\n</item>
+        <item>public class A {\n\n
+    int variable = 0; \n
+}\n
+
+public class Demo extends A{\n
+
+}\n
+
+public void testDowncast(){\n\n
+    Demo myClass = new Demo();\n\n
+    myClass.variable = 2;\n\n
+    A morphingTime = myClass;\n\n
+    System.out.println(\"And now Power Ranger Demo has turned into Mighty A:\");\n\n
+    System.out.println(\"I am: \"+morphingTime.getClass() + \" and my variable is: \" + morphingTime.variable);\n\n
+}\n\n\n\n
+        ______\n\n\n\n\n\n</item>
         <item></item>
         <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>class MyClass {\n\n
+  public static void main(String[ ] args) {\n\n
+    Animal a1 = new Animal("Robby");\n
+    Animal a2 = new Animal("Robby");\n
+    System.out.println(a1 == a2);\n\n
+  }\n\n
+}\n\n\n
+        //ans:  ______\n\n\n\n</item>
+        <item> ......\n\n
+ enum Soldier{\n
+   ARROW,\n
+   SWORD,\n
+   BOMB\n
+ } \n
+ ......\n\n
+
+Soldier a = ______;\n\n
+
+switch(a) {\n
+  case ARROW:\n
+    System.out.println(\"Arrow!\");\n
+    break;\n
+  case SWORD:\n
+    System.out.println(\"Sword!\");\n
+  break;\n
+  case BOMB:\n
+    System.out.println(\"BOMB!\");\n
+    break;\n
+}\n
+//Outputs \"BOMB!\"\n\n\n\n</item>
+        <item>\n\n\n\n\n\n\n\n\n______</item>
 
 
         <item>Java throw keyword is used to explicitly throw an exception.Java throws keyword is used to declare an exception.\n\n
