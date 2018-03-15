@@ -38,7 +38,7 @@
         <item>Q6_5130</item>
         <item>Q6_6[ABC, DEF]</item>
         <item>Q6_7[2,10,10,33,34]</item>
-        <item>Q6_8while(it.hasNext()) { value = (String) it.next(); System.out.println(value); }
+        <item>Q6_8(it.hasNext()) { value = (String) it.next(); System.out.println(value); }
        </item>
         <item>Q6_9exists()</item>
         <item>Q6_JFile file = new File(\"C:\\\\ITDog\\\\test.txt\");</item>
@@ -695,7 +695,7 @@ public class Main {\n\n
 
        Iterator it = animals.iterator();\n\n
         //use variable value to assign the LinkedList value (Hints: use hasNext()to evaluate the existence of next element)\n\n
-       ______\n\n
+       while______\n\n
 
   }\n\n
 }\n\n

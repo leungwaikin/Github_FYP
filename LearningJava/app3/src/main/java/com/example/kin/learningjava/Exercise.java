@@ -217,7 +217,8 @@ public class Exercise extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             String inputOrginal = input1.getText().toString();
-                            String input11 = input1.getText().toString().replaceAll(" ","");
+                            String input10 = input1.getText().toString().replaceAll("\n","");
+                            String input11 = input10.toString().replaceAll(" ","");
                             String question = spinner.getSelectedItem().toString().substring(0,4);
                             String[] anarray=context.getResources().getStringArray(R.array.model);
                             String ans11="";
