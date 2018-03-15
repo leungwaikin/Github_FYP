@@ -65,15 +65,15 @@ public class Exercise extends AppCompatActivity {
         categories.add("Q2_2: According to above question , when the input is higher than 5 , print  \"too large \" ,otherwise print  \"too small \" ");
         categories.add("Q2_3: Using else-if statement to evalute the smallest value of two numbers");
         categories.add("Q2_4: Using NOT operator to evalute a variable is not larger than 10");
-        categories.add("Q2_5: Find the output of the program");
-        categories.add("Q2_6: Find the output of the program");
+        categories.add("Q2_5: Find the output of the switch while-loop program ");
+        categories.add("Q2_6: Find the output of the for-loop program");
         categories.add("Q2_7: Using for loop to print out 1 to 10");
         categories.add("Q2_8: Modify the answer of previous question to print out 1 to 10 using do-while loop (Hints: Using Increment inside the loop");
 
         categories.add("Q3_1: Write a program to initialize an array with \'H\' , \'E\',\'L\',\'L\',\'O\' (Hints:Use character array) ");
-        categories.add("Q3_2: Find the output of the program");
+        categories.add("Q3_2: Find the output of the array program");
         categories.add("Q3_3: Write a program to print the elements from an array {0,1,2,3,4,5}  using enhanced for loop ");
-        categories.add("Q3_4: Find the output of the program");
+        categories.add("Q3_4: Find the output of the multidimensional array program");
 
         categories.add("Q4_1: What is the function of constructor");
         categories.add("Q4_2: Fill in the blank to complete the program");
@@ -89,15 +89,15 @@ public class Exercise extends AppCompatActivity {
         categories.add("Q4_L: Write down the import statement so as to import a class named Simple ");
 
         categories.add("Q5_1: Fill in the blank so that the program can achieve encapsulation");
-        categories.add("Q5_2: FIll in the blank to create a subclass object");
+        categories.add("Q5_2: FIll in the blank to create a subclass");
         categories.add("Q5_3: Write down the output of the program");
         categories.add("Q5_4: Fill in the blank of the following statement");
         categories.add("Q5_5: Fill in the blank of the abstract class");
         categories.add("Q5_6: State whether the following fragment code is correct or wrong");
         categories.add("Q5_7: Complete the following fragment code of type casting");
         categories.add("Q5_8: State the following fragment code is upcasting of downcasting");
-        categories.add("Q5_9: (Unfinished)");
-        categories.add("Q5_J: (Unfinished)");
+        categories.add("Q5_9: Write down the output of the anonymous class program");
+        categories.add("Q5_J: Write down the output of the inner class program");
         categories.add("Q5_K: Evalute the following program return true or false");
         categories.add("Q5_L: Complete the program to print out the according output");
         categories.add("Q5_M: Write the import statement that the package is mainly for creating user interfaces and for painting graphics and images");

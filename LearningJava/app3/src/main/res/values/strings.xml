@@ -28,6 +28,8 @@
         <item>Q5_6wrong</item>
         <item>Q5_7(int)</item>
         <item>Q5_8downcasting</item>
+        <item>Q5_9Starting...</item>
+        <item>Q5_J0 2 4 6 8 </item>
         <item>Q5_LSoldier.BOMB</item>
         <item>Q5_Mimport java.awt.*;</item>
         <item>Q5_Kfalse</item>
@@ -481,9 +483,83 @@ public void testDowncast(){\n\n
     System.out.println(\"And now Power Ranger Demo has turned into Mighty A:\");\n\n
     System.out.println(\"I am: \"+morphingTime.getClass() + \" and my variable is: \" + morphingTime.variable);\n\n
 }\n\n\n\n
-        ______\n\n\n\n\n\n</item>
-        <item></item>
-        <item></item>
+       //ans:  ______\n\n\n\n\n\n</item>
+        <item>class Car {\n\n
+  public void start() {\n\n
+    System.out.println("Starting...");\n\n
+  }\n\n
+}  \n\n\n
+public static void main(String[ ] args) {\n
+  Car c2 = new Car() {\n
+    @Override public void start() {\n
+      System.out.println("Wooooo");\n
+    }\n
+  };\n\n
+  Car c2 = new Car();\n
+  c2.start();\n
+  }\n\n
+//The output: "______"\n\n\n\n
+</item>
+        <item>public class Main {\n\n
+
+    // Create an array\n\n
+    private final static int SIZE = 10;\n\n
+    private int[] intArray = new int[SIZE];\n\n\n
+
+    public Main() {\n\n
+        // fill the array with ascending integer values\n\n
+        for (int i = 0; i &lt; SIZE; i++) {\n\n
+            intArray[i] = i;\n\n
+        }\n\n
+    }\n\n\n
+
+    public void printEven() {\n\n\n
+
+        // Print out values of even indices of the array\n\n
+        DataIterator iterator = this.new Even();\n\n
+        while (iterator.hasNext()) {\n\n
+            System.out.print(iterator.next() + \" \");\n\n
+        }\n\n
+        System.out.println();\n\n
+    }\n\n\n
+
+    interface DataIterator extends java.util.Iterator&lt;Integer> { }\n\n
+
+    // Inner class implements the DataIterator interface,\n\n
+    // which extends the Iterator&lt;Integer> interface\n\n
+
+    private class Even implements DataIterator {\n\n\n
+
+        // Start stepping through the array from the beginning\n\n
+        private int nextIndex = 0;\n\n
+
+        public boolean hasNext() {\n\n
+
+            // Check if the current element is the last in the array\n\n
+            return (nextIndex &lt;= SIZE - 1);\n
+        }        \n\n
+
+        public Integer next() {\n\n
+
+            // Record a value of an even index of the array\n\n
+            Integer retValue = Integer.valueOf(intArray[nextIndex]);\n\n
+
+            // Get the next even element\n\n
+            nextIndex += 2;\n\n
+            return retValue;\n\n
+        }\n
+    }\n\n
+
+    public static void main(String s[]) {\n\n
+
+        // Fill the array with integer values and print out only\n
+        // values of even indices\n
+        Main ds = new Main();\n
+        ds.printEven();\n
+    }\n
+}\n\n
+            //Output : ______\n\n\n\n\n
+</item>
         <item>class MyClass {\n\n
   public static void main(String[ ] args) {\n\n
     Animal a1 = new Animal("Robby");\n
