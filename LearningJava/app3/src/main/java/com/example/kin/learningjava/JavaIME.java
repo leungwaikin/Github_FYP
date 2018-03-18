@@ -192,7 +192,7 @@ public class JavaIME extends InputMethodService implements KeyboardView.OnKeyboa
                     kv.setKeyboard(keyboard);
                 }
                 if (code=='#'&&keyString=="2"&& keyString2=="1") {
-                    ic.commitText(String.valueOf("/* */"), 1);
+                    ic.commitText(String.valueOf(" \"   \" "), 1);
                     break;
                 }
 

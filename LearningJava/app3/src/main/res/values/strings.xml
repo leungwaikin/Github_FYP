@@ -11,7 +11,7 @@
     <string name="subtype_en_US">English (US)</string>
     <string-array name="model" >
         <item>Q2_5bird</item>
-        <item>Q2_65,6,7,8,9,10</item>
+        <item>Q2_65678910</item>
         <item>Q3_215</item>
         <item>Q3_411</item>
         <item>Q4_2HelloWorld()</item>
@@ -59,7 +59,7 @@ public class Main{\n\n
             /*We can use the println method to prints a line of text to the screen.
             The System class and its out stream are used to access to println method.*/
 
-            \n System.out.println(\"This is Q1.3 answer\");
+            \n System.out.println(\"This is Q1_3 answer\");
             \n \n }\n\n
             }</item>
 
@@ -206,10 +206,10 @@ public class Main{\n\n
   }\n
             //Find the output of the program ______\n\n\n
 }</item>
-        <item> int x = 1;\n\n
+        <item> int x = 5;\n\n
 
-      while( x &lt; 10 ) {\n\n
-         System.out.print("value of x : " + x );\n\n
+      while( x &lt;= 10 ) {\n\n
+         System.out.print(x);\n\n
          x++;\n\n
       }\n
             //Find the output of the program ______\n\n\n</item>
@@ -346,7 +346,7 @@ System.out.println(x);\n\n
     this.color = c;\n\n
   //The keyword this is used to refer to the current object.\n\n
   }\n\n
-}\n\n</item>
+}\n\n\n</item>
 
 <item>
         class Main {\n\n
@@ -607,7 +607,7 @@ Throw is used within the method.Throws is used with the method signature.\n\n
 OR\n\n
 
 You cannot throw multiple exceptions.You can declare multiple exceptions through throws e.g.\n
-public void method()throws IOException,SQLException.\n
+public void method()throws IOException,SQLException.\n\n\n\n\n
 </item>
         <item>
             class MyThread extends Thread{  \n\n

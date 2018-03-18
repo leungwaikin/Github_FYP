@@ -93,9 +93,9 @@ public class Exercise extends AppCompatActivity {
         categories.add("Q5_3: Write down the output of the program");
         categories.add("Q5_4: Fill in the blank of the following statement");
         categories.add("Q5_5: Fill in the blank of the abstract class");
-        categories.add("Q5_6: State whether the following fragment code is correct or wrong");
-        categories.add("Q5_7: Complete the following fragment code of type casting");
-        categories.add("Q5_8: State the following fragment code is upcasting of downcasting");
+        categories.add("Q5_6: State whether the following fragmented code is correct or wrong");
+        categories.add("Q5_7: Complete the following fragmented code of type casting");
+        categories.add("Q5_8: State the following fragmented code is upcasting of downcasting");
         categories.add("Q5_9: Write down the output of the anonymous class program");
         categories.add("Q5_J: Write down the output of the inner class program");
         categories.add("Q5_K: Evalute the following program return true or false");
@@ -243,6 +243,7 @@ public class Exercise extends AppCompatActivity {
 
                                 input1.setText(inputOrginal+"(Correct)");
                                 input1.setTextColor(Color.rgb(0,255,0));
+                                input1.setEnabled(false);
                             }
                             if(!input11.equals(ans12)) {
                                /* Spannable ans = new SpannableString(ans11);
