@@ -121,13 +121,13 @@ public class JavaIME extends InputMethodService implements KeyboardView.OnKeyboa
                     ic.commitText(String.valueOf("public static void main(String[] args){} "), 1);
                 }
                 if (code == '3' && keyBoolean) {
-                    ic.commitText(String.valueOf("if(){} "), 1);
+                    ic.commitText(String.valueOf("if(_){} "), 1);
                 }
                 if (code == '4' && keyBoolean) {
                     ic.commitText(String.valueOf("else{} "), 1);
                 }
                 if (code == '0' && keyBoolean) {
-                    ic.commitText(String.valueOf("for(){} "), 1);
+                    ic.commitText(String.valueOf("for(_;_;_){} "), 1);
                 }
 
                 if (code == 'q' && keyBoolean) {
@@ -140,7 +140,7 @@ public class JavaIME extends InputMethodService implements KeyboardView.OnKeyboa
                     ic.commitText(String.valueOf("do{}while();"),1);
                 }
                 if (code == 'r' && keyBoolean) {
-                    ic.commitText(String.valueOf("switch(){}"), 1);
+                    ic.commitText(String.valueOf("switch(_){}"), 1);
                 }
 
                 if (code == 'p' && keyBoolean) {

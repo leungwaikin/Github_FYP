@@ -458,7 +458,7 @@ class Cat extends Animal {\n\n
     System.out.println(\"wo\");\n\n
   }\n\n
 }\n\n</item>
-        <item>public interface SomethingIsWrong {\n\n
+        <item>public interface CorrectOrWrong {\n\n
     void aMethod(int aValue) {\n\n
         System.out.println("Hi Mom");\n\n
     }\n\n
