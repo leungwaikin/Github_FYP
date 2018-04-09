@@ -121,30 +121,30 @@ public class JavaIME extends InputMethodService implements KeyboardView.OnKeyboa
                     ic.commitText(String.valueOf("public static void main(String[] args){} "), 1);
                 }
                 if (code == '3' && keyBoolean) {
-                    ic.commitText(String.valueOf("if(_){} "), 1);
+                    ic.commitText(String.valueOf("if(_){\n\n} "), 1);
                 }
                 if (code == '4' && keyBoolean) {
-                    ic.commitText(String.valueOf("else{} "), 1);
+                    ic.commitText(String.valueOf("else{\n\n} "), 1);
                 }
                 if (code == '0' && keyBoolean) {
-                    ic.commitText(String.valueOf("for(_;_;_){} "), 1);
+                    ic.commitText(String.valueOf("for(_;_;_){\n\n} "), 1);
                 }
 
                 if (code == 'q' && keyBoolean) {
                     ic.commitText(String.valueOf("System.out.println();"), 1);
                 }
                 if (code == 'w' && keyBoolean) {
-                    ic.commitText(String.valueOf("try{}catch(Exception e){}"), 1);
+                    ic.commitText(String.valueOf("try{\n\n}catch(Exception e){\n}"), 1);
                 }
                 if (code == 'e' && keyBoolean) {
-                    ic.commitText(String.valueOf("do{}while();"),1);
+                    ic.commitText(String.valueOf("do{\n\n}while();"),1);
                 }
                 if (code == 'r' && keyBoolean) {
-                    ic.commitText(String.valueOf("switch(_){}"), 1);
+                    ic.commitText(String.valueOf("switch(_){\ndefault:\nbreak;\n}"), 1);
                 }
 
                 if (code == 'p' && keyBoolean) {
-                    ic.commitText(String.valueOf("public Example(){} "), 1);
+                    ic.commitText(String.valueOf("public Example(){\n\n} "), 1);
                 }
                 if (code == 'a' && keyBoolean) {
                     ic.commitText(String.valueOf("import java.lang.*; "), 1);
