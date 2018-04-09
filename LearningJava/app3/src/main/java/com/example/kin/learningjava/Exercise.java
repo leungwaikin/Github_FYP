@@ -129,16 +129,11 @@ public class Exercise extends AppCompatActivity {
         WebSettings webSettings = mwebview.getSettings();
         webSettings.setJavaScriptEnabled(true);
         //mwebview.getSettings().setBuiltInZoomControls(true);
-        mwebview.setInitialScale(1);
+
         String url="https://repl.it/repls/SnivelingSubmissiveRepo";
         //String url = "https://repl.it/@steveysh/UnsightlyMetallicAdministrator";
-        mwebview.loadUrl("https://repl.it/repls/NoteworthyIdenticalSpheres");
+        mwebview.loadUrl("https://tio.run/##y0osS9TNSsn@/7@gNCknM1khOSexuFjBNzEzT6GaixMqWFySWAKkyvIzUxRygVIawSVFmXnp0bEKiUXpxZoglZxcnLVctf//AwA");
 
-       mwebview.loadUrl("javascript:(function() { " +
-                "var head = document.getElementsByClassName('jsx-96056714 wrapper').style.display='none'; " +
-                "})()");
-        mwebview.getSettings().setUseWideViewPort(true);
-        mwebview.getSettings().setLoadWithOverviewMode(true);
         //Getting the instance of Spinner and applying OnItemSelectedListener on it
 
     }
