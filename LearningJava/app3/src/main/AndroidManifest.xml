@@ -111,7 +111,7 @@
         <activity android:name=".Chapter4quiz" />
         <activity android:name=".Exercise" />
         <activity android:name=".Chapter1i" />
-
+        <activity android:name=".CompilerActivity" />
         <activity android:name=".Quiz1result"></activity>
     </application>
 

@@ -132,7 +132,8 @@ public class Exercise extends AppCompatActivity {
         mwebview.setInitialScale(1);
         String url="https://repl.it/repls/SnivelingSubmissiveRepo";
         //String url = "https://repl.it/@steveysh/UnsightlyMetallicAdministrator";
-        mwebview.loadUrl("https://repl.it/repls/NoteworthyIdenticalSpheres");
+        mwebview.loadUrl("https://repl.it/@javalearner2/NormalWrathfulHarddrive");
+        //mwebview.loadUrl("https://repl.it/repls/compilework");
         mwebview.loadUrl("javascript:(function() { " +
                 "var head = document.getElementsByClassName('jsx-96056714 wrapper').style.display='none'; " +
                 "})()");

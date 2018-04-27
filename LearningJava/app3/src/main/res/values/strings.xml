@@ -748,5 +748,11 @@ public class Main {\n\n
   }\n\n
 }\n\n\n</item>
     </string-array>
-
+    <string name="First_programme">
+        public class %1$s {\n
+	       public static void main(String[] args){\n
+		      System.out.print(\"Hello rider Decade!\");\n
+	       }\n
+        }\n
+        </string>
 </resources>
