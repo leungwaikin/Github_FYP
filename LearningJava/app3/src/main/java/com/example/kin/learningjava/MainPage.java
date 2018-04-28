@@ -2,10 +2,7 @@ package com.example.kin.learningjava;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -17,14 +14,14 @@ public class MainPage extends AppCompatActivity {
     TextView textView1;
     ImageButton imgbutton1,imgbutton2,imgbutton3,imgbutton4;
     String name, temp;
-
+    Button helpbutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
         Bundle bundle=getIntent().getExtras();
         name=bundle.getString("username");
-        textView1=(TextView)findViewById(R.id.textView1);
+        textView1=(TextView)findViewById(R.id.textView2);
         temp = "Welcome, "+ name;
         textView1.setText(temp);
         logout=(Button)findViewById(R.id.button1);
@@ -41,6 +38,20 @@ public class MainPage extends AppCompatActivity {
                 startActivity(jumpage);
             }
         });
+
+        helpbutton=(Button)findViewById(R.id.help);
+        helpbutton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            //On click function
+            public void onClick(View w) {
+                Intent jumpage=new Intent(MainPage.this,help.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username",name);
+                jumpage.putExtras(bundle);
+                startActivity(jumpage);
+            }
+        });
+
         imgbutton1=(ImageButton)findViewById(R.id.imageButton1);
         imgbutton1.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -58,7 +69,7 @@ public class MainPage extends AppCompatActivity {
             @Override
             //On click function
             public void onClick(View w) {
-                Intent jumpage=new Intent(MainPage.this,CompilerActivity.class);
+                Intent jumpage=new Intent(MainPage.this,Exercise.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("username",name);
                 jumpage.putExtras(bundle);
