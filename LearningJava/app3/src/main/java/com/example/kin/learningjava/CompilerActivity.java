@@ -60,7 +60,7 @@ public class CompilerActivity extends AppCompatActivity {
                             input.setText("Error:Please enter class name");
                         }else{
                             Resources res = getResources();
-                            String inS = String.format(res.getString(R.string.First_programme), className);
+                            String inS = String.format(res.getString(R.string.default_program), className);
                             input.setText(inS);
                         }
                     }
