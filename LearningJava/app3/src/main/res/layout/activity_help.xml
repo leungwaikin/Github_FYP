@@ -31,7 +31,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:text="LearningJava is an online android application which requires a network connection to perform the following functions: tutorials , compiler and quiz result submission . So please keep the mobile 'online' and dont worry if there is an error due to the connection failure."
+            android:text="LearningJava is an online android application which requires a network connection to perform the following functions: tutorials , online compiler and quiz result submission . So please keep the mobile 'online' and dont worry if there is an error due to the connection failure."
             android:textColor="@color/translucent_red"
             android:textSize="20sp" />
 
@@ -39,7 +39,7 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:text="Our application has features include tutorials for learning java, a compiler with questions for exercise column, the information of developers in about us page and an account page for changing password and displaying the score of quizzes. Also, we will have a quiz at the end of every tutorial chapter. "
+            android:text="Our application has items include tutorials for learning java, an online compiler with questions and offline compiler for exercise column, the information of developers in about us page and an account page for changing password and displaying the score of quizzes. Also, we will have a quiz at the end of every tutorial chapter. "
             android:textColor="@color/translucent_red"
             android:textSize="20sp" />
 

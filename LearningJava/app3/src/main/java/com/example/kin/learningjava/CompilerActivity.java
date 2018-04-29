@@ -31,7 +31,7 @@ import dalvik.system.DexClassLoader;
 
 
 public class CompilerActivity extends AppCompatActivity {
-    String className=" ";
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activitiy_compiler);
@@ -43,37 +43,7 @@ public class CompilerActivity extends AppCompatActivity {
         input.setMovementMethod(new ScrollingMovementMethod());
         output.setMovementMethod(new ScrollingMovementMethod());
         error.setMovementMethod(new ScrollingMovementMethod());
-        final EditText ncName = new EditText(this);
 
-// Set the default text to a link of the Queen
-
-        new AlertDialog.Builder(this)
-                .setTitle("Class Name")
-                .setMessage("Enter class name of the class:")
-                .setView(ncName)
-                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int whichButton) {
-                        className = ncName.getText().toString();
-
-                        if(className.isEmpty()) {
-
-                            input.setText("Error:Please enter class name");
-                        }else{
-                            Resources res = getResources();
-                            String inS = String.format(res.getString(R.string.default_program), className);
-                            input.setText(inS);
-                        }
-                    }
-                })
-                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int whichButton) {
-
-                        input.setText("Error:Please enter class name");
-
-
-                    }
-                })
-                .show();
 
         Button compile= (Button) findViewById(R.id.Compile);
         compile.setOnClickListener(new View.OnClickListener() {
@@ -114,7 +84,7 @@ public class CompilerActivity extends AppCompatActivity {
 
         try {
             dexWriter = new BufferedOutputStream(
-                    new FileOutputStream( storage.getAbsolutePath() + "/"+className+".java"));
+                    new FileOutputStream( storage.getAbsolutePath() + "/"+"Main"+".java"));
             byte[] buf = new byte[BUF_SIZE];
             String buff=input.getText().toString();
             dexWriter.write(buff.getBytes());
@@ -131,7 +101,7 @@ public class CompilerActivity extends AppCompatActivity {
             StringWriter writer= new StringWriter();
             PrintWriter pw =new PrintWriter(writer);
             org.eclipse.jdt.internal.compiler.batch.Main ecjMain = new org.eclipse.jdt.internal.compiler.batch.Main(new PrintWriter(System.out), pw, false/*noSystemExit*/, null);
-            ecjMain.compile(new String[]{"-classpath", storage.getAbsolutePath() + "/android.jar", storage.getAbsolutePath() + "/" + className + ".java"});
+            ecjMain.compile(new String[]{"-classpath", storage.getAbsolutePath() + "/android.jar", storage.getAbsolutePath() + "/" + "Main" + ".java"});
             error.setText(writer.toString());
         }catch (Exception e) {
             System.err.println("Error while copying from assets: " + e.getMessage());
@@ -139,18 +109,18 @@ public class CompilerActivity extends AppCompatActivity {
         }
 
         System.err.println("calling DEX and dexifying the test class");
-        com.android.dx.command.Main.main(new String[] {"--dex", "--output=" + storage.getAbsolutePath() + "/"+className+".jar", storage.getAbsolutePath() + "/./"+className+".class"});
+        com.android.dx.command.Main.main(new String[] {"--dex", "--output=" + storage.getAbsolutePath() + "/"+"Main"+".jar", storage.getAbsolutePath() + "/./"+"Main"+".class"});
 
         System.err.println("instantiating DexClassLoader, loading class and invoking toString()");
-        DexClassLoader cl = new DexClassLoader(storage.getAbsolutePath() +  "/"+className+".jar", storage.getAbsolutePath(), null, getClassLoader());
+        DexClassLoader cl = new DexClassLoader(storage.getAbsolutePath() +  "/"+"Main"+".jar", storage.getAbsolutePath(), null, getClassLoader());
 
-        File aa=new File(storage.getAbsolutePath() + "/"+className+".jar");
+        File aa=new File(storage.getAbsolutePath() + "/"+"Main"+".jar");
 
 
 
         try{
             Runtime rt=Runtime.getRuntime();
-            Process proc=rt.exec("dalvikvm -cp"+" "+ storage.getAbsolutePath() +  "/"+className+".jar"+" "+className);
+            Process proc=rt.exec("dalvikvm -cp"+" "+ storage.getAbsolutePath() +  "/"+"Main"+".jar"+" "+"Main");
             InputStream stderr = proc.getInputStream();
             InputStreamReader isr = new InputStreamReader(stderr);
             BufferedReader br = new BufferedReader(isr);

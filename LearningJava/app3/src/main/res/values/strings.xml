@@ -749,7 +749,7 @@ public class Main {\n\n
 }\n\n\n</item>
     </string-array>
     <string name="default_program">
-        public class %1$s {\n
+        public class Main {\n
 	       public static void main(String[] args){\n
 		      System.out.print(\"Hello World!\");\n
 	       }\n
