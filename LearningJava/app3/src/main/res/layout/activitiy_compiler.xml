@@ -12,7 +12,15 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="245dp">
-
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="40dp"
+            android:textColor="@color/translucent_red"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Offline  Compiler" />
         <EditText
             android:id="@+id/input"
             android:layout_width="fill_parent"
@@ -22,23 +30,28 @@
             android:text="@string/default_program"
             android:textSize="20sp" />
 
+
+
         <Button
             android:id="@+id/Compile"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:clickable="true"
             android:text="Compile &amp; Run "
-            android:textColor="@color/translucent_red"
-            android:textSize="18sp" />
-
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:background="@android:color/holo_blue_dark"
+            android:padding="8dp"
+             />
 
 
         <TextView
             android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Program Output :"
+            android:layout_gravity="center"
+            android:text=" Program Display :"
             android:textSize="20sp" />
 
         <TextView
@@ -47,6 +60,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="5dp"
             android:layout_weight="2"
+            android:background="#f8f8ff"
             android:scrollbars="vertical"
             android:textSize="20sp" />
 
@@ -54,8 +68,8 @@
             android:id="@+id/text3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:text=" Error msg :"
+            android:layout_gravity="center"
+            android:text=" Error messsge :"
             android:textSize="20sp" />
 
         <TextView
@@ -64,6 +78,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="5dp"
             android:layout_weight="2"
+            android:background="#ff0000"
             android:scrollbars="vertical"
             android:textSize="20sp" />
     </LinearLayout>
