@@ -36,7 +36,7 @@ public class Exercise extends AppCompatActivity {
     WebView mwebview;
     String name;
     final Context context = this;
-
+    Button offlinecompiler;
     //String[] albums = getResources().getStringArray(R.array.exercises);
    // Resources res = getResources();
   //  String[]  exercises = res.getStringArray(R.array.exercises);
@@ -139,6 +139,15 @@ public class Exercise extends AppCompatActivity {
                 "})()");
         mwebview.getSettings().setUseWideViewPort(true);
         mwebview.getSettings().setLoadWithOverviewMode(true);
+        offlinecompiler=(Button)findViewById(R.id.offlinecompiler);
+        offlinecompiler.setOnClickListener(new View.OnClickListener(){
+            @Override
+            //On click function
+            public void onClick(View w) {
+                Intent jumpage=new Intent(Exercise.this,CompilerActivity.class);
+                startActivity(jumpage);
+            }
+        });
         //Getting the instance of Spinner and applying OnItemSelectedListener on it
 
     }

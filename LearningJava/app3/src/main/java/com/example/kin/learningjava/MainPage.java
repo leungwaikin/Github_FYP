@@ -69,7 +69,7 @@ public class MainPage extends AppCompatActivity {
             @Override
             //On click function
             public void onClick(View w) {
-                Intent jumpage=new Intent(MainPage.this,CompilerActivity.class);
+                Intent jumpage=new Intent(MainPage.this,Exercise.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("username",name);
                 jumpage.putExtras(bundle);
