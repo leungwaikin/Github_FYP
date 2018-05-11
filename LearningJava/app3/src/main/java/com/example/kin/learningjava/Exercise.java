@@ -145,6 +145,7 @@ public class Exercise extends AppCompatActivity {
             //On click function
             public void onClick(View w) {
                 Intent jumpage=new Intent(Exercise.this,CompilerActivity.class);
+                jumpage.putExtra("event","Default");
                 startActivity(jumpage);
             }
         });
