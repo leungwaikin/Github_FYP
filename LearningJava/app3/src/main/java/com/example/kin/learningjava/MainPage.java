@@ -1,7 +1,9 @@
 package com.example.kin.learningjava;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +17,7 @@ public class MainPage extends AppCompatActivity {
     ImageButton imgbutton1,imgbutton2,imgbutton3,imgbutton4;
     String name, temp;
     Button helpbutton;
+    final Context context = this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,11 +72,41 @@ public class MainPage extends AppCompatActivity {
             @Override
             //On click function
             public void onClick(View w) {
-                Intent jumpage=new Intent(MainPage.this,Exercise.class);
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                builder.setView(R.layout.online_or_offline);
+                final AlertDialog dialog = builder.create();
+
+                dialog.show();
+
+                final Button output = (Button) dialog.findViewById(R.id.online);
+                final Button error = (Button) dialog.findViewById(R.id.offline);
+                output.setOnClickListener(new View.OnClickListener(){
+
+                    public void onClick(View w) {
+                        Intent jumpage=new Intent(MainPage.this,Exercise.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("username",name);
+                        jumpage.putExtras(bundle);
+                        startActivity(jumpage);
+                    }
+                });
+
+
+                error.setOnClickListener(new View.OnClickListener(){
+
+                    public void onClick(View w) {
+                        Intent jumpage=new Intent(MainPage.this,CompilerActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("username",name);
+                        jumpage.putExtras(bundle);
+                        startActivity(jumpage);
+                    }
+                });
+               /* Intent jumpage=new Intent(MainPage.this,Exercise.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("username",name);
                 jumpage.putExtras(bundle);
-                startActivity(jumpage);
+                startActivity(jumpage);*/
             }
         });
         imgbutton3=(ImageButton)findViewById(R.id.imageButton3);

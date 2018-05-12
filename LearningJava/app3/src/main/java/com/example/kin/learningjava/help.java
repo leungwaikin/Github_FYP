@@ -19,6 +19,8 @@ public class help extends AppCompatActivity {
     TextView text6;
     TextView text7;
     TextView text8;
+    TextView text9;
+    TextView text10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,9 @@ public class help extends AppCompatActivity {
         text6=(TextView)findViewById(R.id.textView6);
         text7=(TextView)findViewById(R.id.textView7);
         text8=(TextView)findViewById(R.id.textView8);
+        text9=(TextView)findViewById(R.id.textView9);
+        text10=(TextView)findViewById(R.id.textView10);
+
 
         text2.setTextColor(Color.parseColor("#808080"));
         text3.setTextColor(Color.parseColor("#808080"));
@@ -40,5 +45,8 @@ public class help extends AppCompatActivity {
         text6.setTextColor(Color.parseColor("#808080"));
         text7.setTextColor(Color.parseColor("#808080"));
         text8.setTextColor(Color.parseColor("#808080"));
+        text9.setTextColor(Color.parseColor("#808080"));
+        text10.setTextColor(Color.parseColor("#808080"));
+
     }
 }

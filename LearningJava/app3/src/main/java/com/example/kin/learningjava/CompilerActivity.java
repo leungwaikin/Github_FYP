@@ -46,7 +46,12 @@ public class CompilerActivity extends AppCompatActivity {
         input.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
+                int lines = input.getLineCount();
+                String linesText = "";
+                for (int z = 1; z <= lines; z++) {
+                    linesText = linesText + z + "\n";
+                }
+                nLine.setText(linesText);
             }
 
 
@@ -70,8 +75,23 @@ public class CompilerActivity extends AppCompatActivity {
         final EditText ncName = new EditText(this);
 
 
-        if (extras.getString("event").equals("Default")) {
 
+            final Button help= (Button) findViewById(R.id.help);
+            help.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(context);
+                    builder.setView(R.layout.compiler_help);
+                   /* TextView title_of_dialog = new TextView(getApplicationContext());
+                    title_of_dialog.setTextSize(25);
+                    title_of_dialog.setText("How to use the compiler ? ");
+                    builder.setCustomTitle(title_of_dialog);*/
+                   builder.setTitle("How to use the compiler ? ");
+                    final android.support.v7.app.AlertDialog dialog = builder.create();
+
+                    dialog.show();
+                }
+            });
             Button compile = (Button) findViewById(R.id.Compile);
             compile.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
@@ -95,7 +115,7 @@ public class CompilerActivity extends AppCompatActivity {
             });
 
 
-        }
+
     }
 
 

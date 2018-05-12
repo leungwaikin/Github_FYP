@@ -31,6 +31,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="250dp"
+            android:padding="@dimen/activity_horizontal_margin"
             android:text="LearningJava is an online android application which requires a network connection to perform the following functions: tutorials , online compiler and quiz result submission . So please keep the mobile 'online' and dont worry if there is an error due to the connection failure."
             android:textColor="@color/translucent_red"
             android:textSize="20sp" />
@@ -38,7 +39,8 @@
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="270dp"
+            android:padding="@dimen/activity_horizontal_margin"
             android:text="Our application has items include tutorials for learning java, an online compiler with questions and offline compiler for exercise column, the information of developers in about us page and an account page for changing password and displaying the score of quizzes. Also, we will have a quiz at the end of every tutorial chapter. "
             android:textColor="@color/translucent_red"
             android:textSize="20sp" />
@@ -47,39 +49,61 @@
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_height="290dp"
-            android:text="Exercise and compiler are available in the exercise page. You can access the page by clicking the 'Try it yourself' icon on the main page or at the end of the tutorial content. Of course, we made a programming virtual keyboard for you to make use of the compiler. Please go to 'Setting'->'Languages and input'->'Virtual keyboard'->'Manage keyboards'-> turn on the 'Java IME' keyboard. "
+            android:layout_height="180dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Exercise and compilers are available in our application. You can access the page by clicking the 'Try it yourself' icon on the main page or at the end of the tutorial content."
             android:textColor="@color/translucent_red"
             android:textSize="20sp" />
-
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="290dp"
-            android:text="There are around fifty by-topic questions on the exercise column, which most of them are very different. About the online compiler, left hand side is the Java code and the right hand side is the output of the Java program .(Please be reminded that network connection is required on the online compiler column)"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="There are two choices of the compiler : Online version and Offline version. Online version supports multiple files and input arguments, while Offline version is mainly for simple programming, which supports service under no connection and different error message wordings . "
             android:textColor="@color/translucent_red"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
-            android:layout_height="290dp"
-            android:text="Under the online compiler, there is a button which can access the offline compiler. You can write the program code on top of the page, and submit the code by clicking 'COMPILE &amp; RUN' button. The output of the program will be shown on the 'Program Display' box and 'Error message' box if there is an error of the program"
+            android:layout_height="200dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Of course, we made a programming virtual keyboard for you to make use of the compiler. Please go to 'Setting'->'Languages and input'->'Virtual keyboard'->'Manage keyboards'-> turn on the 'Java IME' keyboard. "
             android:textColor="@color/translucent_red"
             android:textSize="20sp" />
+
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:text="For the quiz column , you can click the tutorial icon in the main page, then click the relevant chapter, scroll down to the button, you should be able to use the quiz button. Once you click the button , the quiz will start. (Be reminded that network connection is required to submit the result score)"
+            android:layout_height="300dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="There are around fifty by-topic questions on the online compiler (exercise) column, which most of them are very different. About the online compiler, left hand side is the Java code and the right hand side is the output of the Java program .(Please be reminded that network connection is required on the online compiler column)"
             android:textColor="@color/translucent_red"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Under the online compiler, there is a button which can access the offline compiler too. You can write the program code on top of the page, and submit the code by clicking 'COMPILE &amp; RUN' button. The output of the program will be shown on the 'Program Display' box and 'Error message' box if there is an error of the program"
+            android:textColor="@color/translucent_red"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="For the quiz column , you can click the tutorial icon in the main page, then click the relevant chapter, scroll down to the button, you should be able to use the quiz button. Once you click the button , the quiz will start. (Be reminded that network connection is required to submit the result score)"
+            android:textColor="@color/translucent_red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
             android:text="Enjoy"
             android:textColor="@color/translucent_red"
             android:textSize="18sp" />
