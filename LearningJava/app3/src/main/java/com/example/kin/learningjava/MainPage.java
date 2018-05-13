@@ -83,7 +83,7 @@ public class MainPage extends AppCompatActivity {
                 output.setOnClickListener(new View.OnClickListener(){
 
                     public void onClick(View w) {
-                        Intent jumpage=new Intent(MainPage.this,Exercise.class);
+                        Intent jumpage=new Intent(MainPage.this,Exercise2.class);
                         Bundle bundle = new Bundle();
                         bundle.putString("username",name);
                         jumpage.putExtras(bundle);
