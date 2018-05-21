@@ -106,9 +106,9 @@ public class Exercise2 extends AppCompatActivity {
         categories.add("Q6_2: Fill in the blank to complete the Thread program");
         categories.add("Q6_3: Write the output of the program");
         categories.add("Q6_4: Between ArrayList and LinkList, state which one is better for storage , which one is better for manipulation");
-        categories.add("Q6_5: Wrtie down the output of the HashMap program");
-        categories.add("Q6_6: Wrtie down the output of the HashSet program");
-        categories.add("Q6_7: Wrtie down the output of the sorted list");
+        categories.add("Q6_5: Write down the output of the HashMap program");
+        categories.add("Q6_6: Write down the output of the HashSet program");
+        categories.add("Q6_7: Write down the output of the sorted list");
         categories.add("Q6_8: Complete the program to print out the according output");
         categories.add("Q6_9: Write down the method which can check whether a file exists before working on file");
         categories.add("Q6_J: Fill in the blank to complete the I/O program ");

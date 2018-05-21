@@ -78,7 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:padding="@dimen/activity_horizontal_margin"
-            android:text="There are around fifty by-topic questions on the online compiler (exercise) column, which most of them are very different. About the online compiler, left hand side is the Java code and the right hand side is the output of the Java program .(Please be reminded that network connection is required on the online compiler column)"
+            android:text="There are around fifty by-topic questions on the online compiler (exercise) column, which most of them are very different and can easily find the answer from the related tutorial. About the online compiler, left hand side is the Java code and the right hand side is the output of the Java program .(Please be reminded that network connection is required on the online compiler column)"
             android:textColor="@color/translucent_red"
             android:textSize="20sp" />
 
